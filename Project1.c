@@ -33,7 +33,7 @@ int main()
 }
 
 /*
-//2nd method
+//Professional method
 #include <stdio.h>
 int main()
 {
