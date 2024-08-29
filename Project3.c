@@ -1,6 +1,5 @@
 // This can print charater with space also
 #include <stdio.h>
-#include <stdio.h>
 
 int main()
 {
