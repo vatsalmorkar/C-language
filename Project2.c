@@ -40,7 +40,9 @@ int main()
     printf("The Ans Of b Minus = %d \n", b);
 
 }
-/* #include <stdio.h>
+/*
+// Professional Syntex
+#include <stdio.h>
 
     int func1 (int a, int b);
     int func2 (int a, int b);
@@ -54,12 +56,9 @@ int main()
     
         printf("Enter Value for x \n");
         scanf("%d", &x);
-        printf("x = %d \n", x);
 
         printf("Enter Value for y \n");
         scanf("%d", &y);
-        printf("Y = %d \n", y);
-
         
     z = func1(x, y);
     b = func2(x, y);
