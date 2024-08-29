@@ -1,3 +1,5 @@
+//Interest Rate Calculator
+
 #include <stdio.h>
 main()
 {
