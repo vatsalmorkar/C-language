@@ -1,1 +1,5 @@
+Syntex:
 
+1. printf(" type anything %d", a);
+
+2. scanf("%d", &a); 
