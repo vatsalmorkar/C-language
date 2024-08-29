@@ -1,24 +1,18 @@
-// Character print & not able to print multi charater [solved]
+// This can print charater with space also
+#include <stdio.h>
 #include <stdio.h>
 
-void main()
+int main()
 {
-    char a, b, d;
     char x[80];
-
-    printf("Enter Your First Name : \n");
-    scanf(" %c", &a);
-
-    printf("Enter Your Middle Name : \n");
-    scanf(" %c", &b);
+    char y[5];
     
-    printf("Enter Your Last Name : \n");
-    scanf(" %c", &d);
-
     printf("Type a long line for x with space : ");
     scanf(" %80[^\n]", x);
 
-    printf(" %c \n %c \n %c \n", a, b, d);
+    printf("Type a Word : ");
+    scanf(" %5s", y);
 
     printf(" %-80s", x);
+    printf(" %-5s", y);
 }
