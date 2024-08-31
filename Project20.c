@@ -1,5 +1,6 @@
 // Write a programe do follwing:
 // Declare x and y as integer variables and z as a short integier vatiable
+// "Short int z" can hold the max value 30337 if we use "long int z" it will done the job.
 
 #include<stdio.h>
 
@@ -15,9 +16,5 @@ main()
     z = x + y;
 
     printf(" %d \n %d \n",x, y);
-    printf (" %d", z);
-
-
+    printf (" %ld", z);
 }
-
-// "Short int z" can hold the max value 30337 if we use "long int z" it will done the job.
