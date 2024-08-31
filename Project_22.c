@@ -1,10 +1,10 @@
-// Easy Exercise
+// Print digits - last digits
 
 #include<stdio.h>
 
 int main()
 {
-    int x = 5678;
+    int x = 56781;
     int y;
 
     y = x % 100000;
