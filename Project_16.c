@@ -29,8 +29,5 @@ int main()
               }
             printf ("Less than numbers equal to =  %d \n", y);
             printf ("Greater than numbers equal to =  %d \n", z);
-
         }
-    return 0;
-
 }
