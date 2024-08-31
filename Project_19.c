@@ -1,4 +1,5 @@
 //Given the values of the variables x,y and z, write a program to rotate their values such that x the value of y, y has the value of z, and z has the value of x
+
 #include<stdio.h>
 
 int main()
@@ -19,5 +20,4 @@ int main()
     z = temp;
     
     printf(" %d %d %d", x, y, z); 
-
 }
