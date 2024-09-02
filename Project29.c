@@ -20,12 +20,12 @@ int main()
     else if(a <= 100)
         {
             b = SERVICE_COST;
-            printf(" %f", b);
+            printf(" %.2f", b);
         }
-    else if(a > 0)
+    else
         {
             c = SERVICE_COST + EXTRA_CHARGE * (a - 100);
-            printf(" %2.2f", c);
+            printf(" %.2f", c);
         }
 
 
