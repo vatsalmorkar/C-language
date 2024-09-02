@@ -14,11 +14,11 @@ int main()
 
         if(a == 0)
         {
-            printf(" The value 2 is in multification of value 1");
+            printf(" %d is in multification of %d ", m, n);
         }
         else
         {
-            printf(" it is not in multification");
+            printf(" %d is not multification of %d ", m, n);
         }
 
 }
