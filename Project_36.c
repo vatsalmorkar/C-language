@@ -19,22 +19,31 @@ int main()
         else
         {
             x = a;
-            if(a > 0){
+            if(a > 0)
+            {
                 y = a - x;
-                    if( 0.5 <= y >= 0.9 ){
-                    printf(" Your Round Off Value is %d \n", x + 1);}
-                    else{
-                    printf(" Your Round Off Value is %d \n", x);}
+                if( 0.5 <= y >= 0.9 )
+                {
+                printf(" Your Round Off Value is %d \n", x + 1);
+                }
+                else
+                {
+                printf(" Your Round Off Value is %d \n", x);
+                }
             }
-            else if(a < 0){
+            else if(a < 0)
+            {
                 y = -a +x;
-                    if(0.5 >= y <= 0.9){
-                    printf(" Your Round Off Value is %d \n", -x + 1);}
-                    else{
-                    printf(" Your Round Off Value is %d \n", x);}
+                if(0.5 >= y <= 0.9)
+                {
+                printf(" Your Round Off Value is %d \n", -x + 1);
+                }
+                else
+                {
+                printf(" Your Round Off Value is %d \n", x);
+                }
             }
         }
-    
     }
 }
 
@@ -52,6 +61,6 @@ int main()
             p=a+0.5;
        else
             p=a-0.5;
-              printf("\nNEAREST INTEGER NUMBER OF  %f IS= %d\n",a,(int)p);
+            printf("\nNEAREST INTEGER NUMBER OF  %f IS= %d\n",a,(int)p);
        }
    }
