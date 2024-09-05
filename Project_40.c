@@ -2,7 +2,7 @@
  int main()
  {
     char a[20], b[20], c[20];
-    printf(" \n Enter the name in folloeing formate. \n  NAME     FATHERS_NAME    SURNAME \n");
+    printf(" \n Enter the name in following formate. \n  NAME     FATHERS_NAME    SURNAME \n");
     printf( " Type The Name :");
     scanf( "%20s", a);
     scanf( "%20s", b);
