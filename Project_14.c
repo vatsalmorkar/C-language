@@ -1,4 +1,4 @@
-//Write a program to read the price of an item in decimal form (  like 15.95 ) and print the output in paisa ( like 1595 paisa) .
+//Write a program to read the prise of an item in decimal form (  like 15.95 ) and print the output in paisa ( like 1595 paisa) .
 
 #include<stdio.h>
 
