@@ -1,4 +1,4 @@
-// Another Math LOL Progam But Formatting
+// Another Math Multification for 2 Digit Numbers LOL Progam But Formatting
 
 #include<stdio.h>
 
