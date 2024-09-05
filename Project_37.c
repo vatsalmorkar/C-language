@@ -1,3 +1,5 @@
+//Bar Chart Program
+
 #include<stdio.h>
 
 int main()
