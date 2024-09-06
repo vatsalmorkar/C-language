@@ -10,12 +10,12 @@ int main()
     
     char x[5];
     float a; //converter
-    float min=0, max=0; // for Calculations
+    long int min=999999, max=-999999; // for Calculations
     
     while(1)
     {
         printf(" Enter The Value : ");
-        scanf(" %f", &x);
+        scanf(" %5s", x);
 
         if(strcmp(x,"exit")==0)
         {
@@ -26,7 +26,7 @@ int main()
         {
             a = atoi(x);
 
-            if(a>0 && a < min)
+            if(a < min)
             {
                 min = a;
             }
@@ -37,6 +37,6 @@ int main()
         }
         
     }
-    printf(" Min Value is %.2f \n \n", min);
-    printf(" Max Value is %.2f", max);
+    printf(" Min Value is %ld \n", min);
+    printf(" Max Value is %ld", max);
 }
