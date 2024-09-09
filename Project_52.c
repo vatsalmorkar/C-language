@@ -1,3 +1,4 @@
+//Howmany Number of students fits in to the criteria deciding program
 #include <stdio.h>
 #include <string.h>
 
