@@ -1,3 +1,5 @@
+//Sum of the numbers that greater than 100 but less than 200 and the number must be divisible by 7.
+
 #include<stdio.h>
 
 int main()
