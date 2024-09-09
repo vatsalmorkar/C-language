@@ -1,11 +1,10 @@
 //Sum of the numbers that greater than 100 but less than 200 and the number must be divisible by 7.
-
 #include<stdio.h>
 
 int main()
 {
     int a,y;
-    int x=0; // to store the value
+    int x=0; 
 
     printf("Type 0 after enter all the numbers to exit \n");
     while(1)
@@ -22,9 +21,8 @@ int main()
         
         else if(a > 100 && a < 200 && y == 0 )
         {
-            //printf(" %d \n", a);
             x = x + a;
         }
     }
-    printf(" Your final input is = %d", x);
+    printf(" \n Sum of the numbers that greater than 100 but less than 200 and the number must be divisible by 7 is = %d", x);
 }
