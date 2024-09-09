@@ -1,5 +1,4 @@
 //Use of the switch statement
-
 #include <stdio.h>
 
 int main()
