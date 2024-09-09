@@ -1,11 +1,8 @@
+//Root formula math
 #include <stdio.h>
 
-int func1 (int a, int b, int c)
-{
-    int x;
-    x = (b*b) - (4*a*c);
-    return (x);
-}
+int func1 (int a, int b, int c);
+
 int main()
 {
     int a, b, c;
@@ -23,5 +20,15 @@ int main()
     {
         printf(" There are no real roots");
     }
+    else
+    {
+        printf(" root value = %d", x);
+    }
+}
 
+int func1 (int a, int b, int c)
+{
+    int x;
+    x = (b*b) - (4*a*c);
+    return (x);
 }
