@@ -1,3 +1,4 @@
+//The number is prime or not prime from the range given by user
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
