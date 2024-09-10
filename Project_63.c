@@ -1,4 +1,4 @@
-// Calculate Average
+// Calculate Average from user input
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -12,7 +12,7 @@ int main()
 
     while(1)
     {
-        printf(" \n Enter Number \n");
+        printf(" \n Enter Number :");
         scanf(" %5s", x);
          
         if(strcmp(x, "exit")==0 || strcmp(x, "EXIT")==0)
@@ -21,16 +21,13 @@ int main()
         }
         else
         {
-           z = atoi(x);
-           if(x > 0)
-           {
-               a = a + z;
-               num++; 
-           }
+            z = atoi(x);
+            a = a + z;
+            num++; 
         }
     }
-    printf(" upper side of the equation : %d", a);
-    printf(" lower side of the equation : %d", num);
+    //printf(" Fromula ans above [ + + ] : %d", a);
+    //printf(" Formula and below [total numbers] : %d", num);
     p = a / num;
     printf(" Average = %d", p);
 }
