@@ -1,16 +1,95 @@
 Those are the basic c programming project Notes :
 
+@. %d - Intigier datatype
+   %f - Float datatype
+   %ld - Long intigier datatype
 
-1. printf(" type anything %d", a);
+@. printf(" type anything %d", a);
+   if %5.2f is written in printf or scanf, means total digits will be 5 and after the points there will be only 2 digits. [example - 123.45 or 12.25 or 1.25] 
+   
+@. printf(" %d \n", a);
+   \n  - use for new line
+   if you want to print \n in printf type one slash extra \\n
+   \a  - for elert in windows pc
+   \t  - horizontal space in line
 
-2. scanf("%d", &a); 
+@. scanf("%d", &a); 
+   " & " is called address operator
 
-3. comment lines-   /*    */ OR //
-        
-4. in while(1) loop, we type retun(0); at the end of the program will result in eliminated the concept of while infinite loop.
+@. comment lines-   /*    */ OR //
+
+@. arithmetic operators
+   +  -  *  /  %
+
+   relational operators
+   ==   <=   >=   >   <   !=
+
+   logical operators
+   && [and]   || [or]   ! [reverse - if the answer is true it will show you false]
+
+   assignment operators
+   =   +=   -=   *=   /=
+
+   bitwise operators
+   operated bit by bit
+   0 -> 0 0
+   1 -> 0 1
+   2 -> 1 0
+   3 -> 1 1
+
+@. in any case in c program 0 suggest false
+   in any case in c program 1 suggest true
+
+@. library functions
+   #include <stdio.h>  - main function that include printf and scanf function
+   #include <string.h>  - string function 
+   #include <math.h> - math functions
+   #include <ctype.h> 
+   #include <stdlib.h> - include function to convert string in to numbers
+
+@. #define x 1
+   means it x value will be 1 in all the program
+   it is written below library functions before main() function
+
+@. x = atoi(a) function which convert string in to numbers
+
+@. double parentheses will not work in c language as you use it in to excel.
+   for square root of perticular sqrt( x );
+
+@. c++ means it will increse the last value by adding 1
+   ++c means first it will increase the value first by adding 1
+
+@. if - else condition
+   do not use ; after any if  else  else if statement 
+   it is not mendetary to type else condition after if, only if will work fine
+   else is not require condition after type, it is like the end of the statement
+   if i need to add more condition after if statement use else if
+   if (condition)
+   {
+     logic
+   }
+   else if (condition)
+   {
+     logic
+   }
+   else
+   {
+     logic
+   }
+
+@. while loop
+   run until the condition is setisfied
+   while (condition)
+   {
+     logic
+   }
+
+@. if i want final output to be in some specific format, defind the datatype accordingly at the last where you want the convetred output, it is called formate specification
+
+@. in while(1) loop, we type retun(0); at the end of the program will result in eliminated the concept of while infinite loop.
    - return(0); OR return 0; it indicate the termination of the program without any error.
    - return(p); it return the p value to the main function.
-     example-
+     example -
      int func1 (int a, int b)
      {
       int p;
@@ -18,4 +97,8 @@ Those are the basic c programming project Notes :
       return(p);
      }
    - return; it indicates the no retun value and it is used in void main() function.
+
+
+
+
      
