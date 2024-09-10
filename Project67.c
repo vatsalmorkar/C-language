@@ -1,4 +1,4 @@
-// table of bionical coefficient
+// Table of bionical coefficient
 #include <stdio.h>
 
 // function for factorial calculation
@@ -23,7 +23,7 @@ int main()
     printf(" \n ---------------------------------- \n");
     if(m < x)
     {
-        printf(" m is greater than x program can't run further");
+        printf(" x is greater than m program can't run further");
     }
     else
     {
@@ -31,7 +31,7 @@ int main()
 
         for( i=0 ; i<=m ; i++)
         {
-            printf(" %d", i);
+            printf(" %d |", i);
             for(j=0 ; j<=i; j++)
             {
                 a = func1 (i);
@@ -63,6 +63,5 @@ int func1 (int m)
     //printf(" %d", a);
     return(a);
 }   
-
 
 
