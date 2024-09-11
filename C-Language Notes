@@ -1,9 +1,13 @@
 Those are the basic c programming project Notes :
 
-@. %d - Intigier datatype
-   %f - Float datatype
-   %ld - Long intigier datatype
+@. int - %d - Intigier datatype
+   small int - %d - Small intigier datatype
+   unsigned int - %u - Unsigned intigier ( store only positive values )
+   float - %f - Float datatype
+   long float - %ld - Long intigier datatype
+   double float - %ld - Float intigier datatype
 
+@. you can also store the negetive values in initegier and float datatype
 @. printf(" type anything %d", a);
    - if %5.2f is written in printf or scanf, means total digits will be 5 and after the points there will be only 2 digits. [example - 123.45 or 12.25 or 1.25] 
    
@@ -51,6 +55,7 @@ Those are the basic c programming project Notes :
 @. #define x 1
    - means it x value will be 1 in all the program
    - it is written below library functions before main() function
+   - it can directly use in to the program but you can't diretly print it using printf function
 
 @. x = atoi(a) function which convert string in to numbers
 
@@ -87,8 +92,16 @@ Those are the basic c programming project Notes :
      logic
    }
 
-@. - if i want final output to be in some specific format, defind the datatype accordingly at the last where you want the convetred output
-   - it is called formate specification
+   - infinity while loop
+   while (1)
+   {
+     logic
+   }
+
+@. type casting
+   float a = 2.4;
+   printf( " %d" (int) a );
+   - you can convert anything in numerical datatypes
 
 @. in while(1) loop, we type retun(0); at the end of the program will result in eliminated the concept of while infinite loop.
    - return(0); OR return 0; it indicate the termination of the program without any error.
@@ -130,9 +143,60 @@ Those are the basic c programming project Notes :
             break;
      default:
             (logic)
+            break;
    }
-   - it is used with only intigier and character datatype, 
-   - 
+   - it is used with only intigier and character datatype, can't use with float or anyother datatype
+   - you can't perform any arithmetic, relational, logical and assignemnt opertors in to " case a: " statement
+   - if break; is not used it will run through each line includeing default.
+   - if none of the match happen it will execute the default statement
 
+@. break;
+   - it can use with any loop to exit from the loop
 
-     
+@. continue;
+   - with using this it will skip the next part of the code and execute the code after that
+
+@. goto statement
+   step1 :
+   {
+     code:
+     goto step1 ;
+   }
+   - it is is used when i want to breck multiple loop with the single statement
+
+@. for loop
+   for ( define ; condition ; increase or decrease )
+   - it can run with single element also. but the blank ; is mendetary in for loop
+   - can able to perform arithmetic operators in 3 of the elements
+
+@. do not use veriable in an expression before it has been assign value because sometimes it requires initial value to execute the stuff
+   Example -
+    x = x + y; in this term x requires initialization x = 0
+    count++ ; in this term count veriable also requires intialization count = 0
+
+@. - global veriables - which are defind before main function, it can't be change
+   - local veriables - which are defind into the main function, it can be change
+
+@. do while loop
+   do
+   {
+     (execution)
+   }
+   while (condition)
+   -use it when you need to execute the program at lest one time
+
+@. minus results and incorrect results most probebaly suggest the selected wrong datatype or overflow form the capecity of the datatype
+
+@. - single ' ' is use when i work with single character
+   - double " " is use when i work with strings
+
+@. const int vol_1 = 40;
+   if it written before the execution of the main function it value remain constant through the program
+
+@. voletile int vol_1 = 40;
+   it maybe change due to some external source
+
+@. conditional operator / ternary operator
+   x = (a > b) ? a : b;
+   - in above statement if first condition will true it will execute the a, if condition is not setisfied it will execute b
+
