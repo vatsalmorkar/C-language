@@ -117,7 +117,22 @@ Those are the basic c programming project Notes :
    - i can use math function directly during execution the sub program in to main program 
 
 @. swith function
-   
+   switch (a)
+   {
+     case a:
+            (logic)
+            break;
+     case b:
+            (logic)
+            break;
+     case c:
+            (logic)
+            break;
+     default:
+            (logic)
+   }
+   - it is used with only intigier and character datatype, 
+   - 
 
 
      
