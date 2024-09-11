@@ -1,4 +1,4 @@
-
+//is digit or is alphabet check
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
