@@ -1,3 +1,4 @@
+// Convert full name in to short name
 #include<stdio.h>
  int main()
  {
