@@ -2,10 +2,14 @@ Those are the basic c programming project Notes :
 
 @. int - %d - Intigier datatype
    small int - %d - Small intigier datatype
+   long int - %ld - Long intigier datatype ( can hold much larger vlaue then int datatype almost 4 billion numbers )
    unsigned int - %u - Unsigned intigier ( store only positive values )
    float - %f - Float datatype
    long float - %ld - Long intigier datatype
    double float - %ld - Float intigier datatype
+
+@. - All short and long datatype is used for different operating system 32 bits and 64 bits 16 bits
+   - Different compilar uses different space in different syatem
 
 @. you can also store the negetive values in initegier and float datatype
 @. printf(" type anything %d", a);
@@ -25,9 +29,17 @@ Those are the basic c programming project Notes :
 
 @. arithmetic operators
    +  -  *  /  %
+   - modulas operator % is only use with int data type
+   - if in modulas operator -5%2 the answer will consider the sign of the first digit negetive, if it is 5%-2 the ans will be positive
+   - if in modulas operator -5%-2 the answer will be in negetive
+   - in in / operator -5/-3 result will be positive sign, and if one of the sign will be negetive the result will be negetive
 
    relational operators
    ==   <=   >=   >   <   !=
+   - <= , < first priority
+   - >= , > secound priority
+   - != , == third priority
+   - if same level of priority accours it will be executed from left to right
 
    logical operators
    && [and]   || [or]   ! [reverse - if the answer is true it will show you false]
@@ -64,6 +76,7 @@ Those are the basic c programming project Notes :
 
 @. - c++ means it will increse the last value by adding 1
    - ++c means first it will increase the value first by adding 1
+   - we can print c++ value by using printf function after exiting the loop
 
 @. if - else condition
    - do not use ; after any if  else  else if statement 
@@ -200,3 +213,7 @@ Those are the basic c programming project Notes :
    x = (a > b) ? a : b;
    - in above statement if first condition will true it will execute the a, if condition is not setisfied it will execute b
 
+@. typedef EXISTING_DATATYPE NEW_DATATYPE
+   - it is like rename the datatype i can remane it anything, it can only use at the begning part of the program
+
+@. 
