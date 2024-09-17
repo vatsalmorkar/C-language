@@ -3,6 +3,7 @@ Those are the basic c programming project Notes :
 @. int - %d - Intigier datatype
    small int - %d - Small intigier datatype
    long int - %ld - Long intigier datatype ( can hold much larger vlaue then int datatype almost 4 billion numbers )
+   double int - %ld - Long intigier datatype
    unsigned int - %u - Unsigned intigier ( store only positive values )
    float - %f - Float datatype
    long float - %ld - Long intigier datatype
