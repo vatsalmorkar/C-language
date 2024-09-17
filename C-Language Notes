@@ -114,7 +114,9 @@ Those are the basic c programming project Notes :
 @. type casting
    float a = 2.4;
    printf( " %d" (int) a );
-   - you can convert anything in numerical datatypes
+   - you can convert anything in numerical data types
+   - use %d, %f, %lf according the datatype you want to convert
+   - if you convert float into int datatype the round off will be result only in first number only like 9.9 will be 9, 9.2 will be 9
 
 @. in while(1) loop, we type retun(0); at the end of the program will result in eliminated the concept of while infinite loop.
    - return(0); OR return 0; it indicate the termination of the program without any error.
@@ -216,4 +218,7 @@ Those are the basic c programming project Notes :
 @. typedef EXISTING_DATATYPE NEW_DATATYPE
    - it is like rename the datatype i can remane it anything, it can only use at the begning part of the program
 
-@. 
+@. char answer;
+   answer = getchar();
+   - it will read the charaters from the user until space or enter key pressed.
+   - you can't print using pritf function
