@@ -8,6 +8,8 @@ Those are the basic c programming project Notes :
    float - %f - Float datatype
    long float - %ld - Long intigier datatype
    double float - %ld - Float intigier datatype
+   char[5] - %5c - character datatype to store characters only
+   char[5] - %5s - character datatype to store multiple character as well intigiers
 
 @. - All short and long datatype is used for different operating system 32 bits and 64 bits 16 bits
    - Different compilar uses different space in different syatem
@@ -25,6 +27,20 @@ Those are the basic c programming project Notes :
 
 @. scanf("%d", &a); 
    - " & " is called address operator
+   scanf(" %d %*d %d", &a, &b);
+   - star value will be skipped
+   scanf("%d-%d-%d",&a, &b, &c);
+   - the use need to input  5-10-15
+
+@. char x[5];
+   scanf(" %5s", x);
+   printf(" %-5s", x);
+   - here the negetive sign is use because 5s represtents the 5 boxes if we type 3 characters it will fill the last 3 box, if we use minus sign it will use the boxes from the 1st.
+   scanf(" %[^\n]", x);
+   - it is represent that it can accept anything as input including space, this is use when we want an address as an input from the user
+   - this is risk using with loop becuase it is taking it to the infinite
+   scanf(" %[a-z], x);
+   - it can accpet input only from the a to z
 
 @. comment lines-   /*    */ OR //
 
@@ -223,3 +239,22 @@ Those are the basic c programming project Notes :
    answer = getchar();
    - it will read the charaters from the user until space or enter key pressed.
    - you can't print using pritf function
+
+   a = 'y';
+   putchar(a);
+   - this is the revrse of getchar()
+   - it is also use as a new line character in the terminal   
+
+@. isalpha (c) > 0;
+   isdigit (c) > 0;
+   isalnum (c); - check it is alpha numeric
+   islower (c); - check the letter is lowercase
+   isupper (c); - check the letter is uppercase
+   isprint (c); - check it is printable
+   isspace (c); - check white spaces charater
+   - is alpha assume non-zero value true if the argument contains alphabets , otherwise it assumes zero so we can directly use comparision in to the program
+
+@. toupper(a); - convert letter in to upper case
+   tolower(a); - convert letter in to lower case
+
+@. 43.21e-1 it will output in 4.321
