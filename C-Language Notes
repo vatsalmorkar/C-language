@@ -15,6 +15,7 @@ Those are the basic c programming project Notes :
    - Different compilar uses different space in different syatem
 
 @. you can also store the negetive values in initegier and float datatype
+
 @. printf(" type anything %d", a);
    - if %5.2f is written in printf or scanf, means total digits will be 5 and after the points there will be only 2 digits. [example - 123.45 or 12.25 or 1.25] 
    
@@ -50,6 +51,10 @@ Those are the basic c programming project Notes :
    - if in modulas operator -5%2 the answer will consider the sign of the first digit negetive, if it is 5%-2 the ans will be positive
    - if in modulas operator -5%-2 the answer will be in negetive
    - in in / operator -5/-3 result will be positive sign, and if one of the sign will be negetive the result will be negetive
+   - i can use arithmetic operators in printf function
+     example :
+     printf(" %d", -x); -positve number will be negetive
+     printf(" %d", x+2); -i can add 2 in to the result
 
    relational operators
    ==   <=   >=   >   <   !=
@@ -80,6 +85,9 @@ Those are the basic c programming project Notes :
    #include <math.h> - math functions
    #include <ctype.h> 
    #include <stdlib.h> - include function to convert string in to numbers
+
+@. strcmp(x, "this") - to compare strings
+   - if i want to compare charater use '  ' insted of "  "   
 
 @. #define x 1
    - means it x value will be 1 in all the program
@@ -113,6 +121,13 @@ Those are the basic c programming project Notes :
    {
      logic
    }
+   - you can also use if with only one veriable
+     Example :
+     if(x)
+     {
+      printf(" 10 ");
+     }
+   - this will print 10 unless the x=0, because if x=0 it will consider as false
 
 @. while loop
    - run until the condition is setisfied
@@ -146,8 +161,13 @@ Those are the basic c programming project Notes :
       return(p);
      }
    - return; it indicates the no retun value and it is used in void main() function.
+   - exit(); it indicate the termination due to error
+   - exit(0); it indicates the safe termination of the program, it is use only when breaking out of the system is nessesary
 
-@. user defind function
+@. user defind function / recursion function
+   - when the function call itself
+   - it is deviding the program in to sub program
+   - when the program is solved recursively it is also solved with iteratively 
    int func1 (int a, int b);
    int main()
    {
@@ -237,8 +257,9 @@ Those are the basic c programming project Notes :
 
 @. char answer;
    answer = getchar();
-   - it will read the charaters from the user until space or enter key pressed.
+   - it will read the charaters from the user until enter key pressed
    - you can't print using pritf function
+   - do not provide any space after entring the input in getchar because it will result in error 
 
    a = 'y';
    putchar(a);
@@ -257,4 +278,10 @@ Those are the basic c programming project Notes :
 @. toupper(a); - convert letter in to upper case
    tolower(a); - convert letter in to lower case
 
-@. 43.21e-1 it will output in 4.321
+@. - 43.21e-1 it will output in 4.321
+   - printf(" %7.2e", a); - if you want to convert big number in to exponential form
+   - in above example total max digits are 7 for output and 2 digits are after point value
+   - when you use this function compilar will directly convert any float value to singal digit value + exponential form
+     example :
+     12.34, 123.4, 1234.1 will result 1.23e+2 form
+
