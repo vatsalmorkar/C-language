@@ -93,6 +93,17 @@ Those are the basic c programming project Notes :
    - means it x value will be 1 in all the program
    - it is written below library functions before main() function
    - it can directly use in to the program but you can't diretly print it using printf function
+   - it has some different uses also,
+    #define N 5
+    int main()
+    {
+      int value[N];
+      int n;
+      for(n=0 ; n<N ; ++n)
+      {
+         printf(" %d", n+1)
+      }
+    }
 
 @. x = atoi(a) function which convert string in to numbers
 
