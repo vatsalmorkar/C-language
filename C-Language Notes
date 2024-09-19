@@ -1,11 +1,11 @@
 Those are the basic c programming project Notes :
 
 @. library functions
-   #include <stdio.h>  - main function that include printf and scanf function
+   #include <stdio.h>   - main function that include printf and scanf function
    #include <string.h>  - string function 
-   #include <math.h> - math functions
-   #include <ctype.h> 
-   #include <stdlib.h> - include function to convert string in to numbers
+   #include <math.h>    - math functions
+   #include <ctype.h>   - upper case, lower case, is number, is digit etc.
+   #include <stdlib.h>  - include function to convert string in to numbers
 
 @. int - %d - Intigier datatype
    small int - %d - Small intigier datatype
