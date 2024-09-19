@@ -27,20 +27,20 @@ Those are the basic c programming project Notes :
    - if %5.2f is written in printf or scanf, means total digits will be 5 and after the points there will be only 2 digits. [example - 123.45 or 12.25 or 1.25] 
    
 @. - printf(" %d \n", a);
-   - \n  - use for new line
+     \n  - use for new line
          - if you want to print \n in printf type one slash extra like \\n
          - if you want to print only \ in printf type one slash extra like \\
-   - \a  - for alert in windows pc
-   - \t  - work like tab in word horizontally
+     \a  - for alert in windows pc
+     \t  - work like tab in word horizontally
 
 @. - scanf("%d", &a); 
-   - " & " is called address operator
+     - " & " is called address operator
 
-   - scanf(" %d %*d %d", &a, &b);
-   - star value will be skipped
+     - scanf(" %d %*d %d", &a, &b);
+     - star value will be skipped
 
    - scanf("%d-%d-%d",&a, &b, &c);
-   - the use need to input  5-10-15
+     - the use need to input  5-10-15
 
 @. - char x[5];
      scanf(" %5s", x);
@@ -54,60 +54,60 @@ Those are the basic c programming project Notes :
    - scanf(" %[a-z], x);
      - it can accpet input only from the a to z
 
-@. comment lines-   /*    */ OR //
+@. - comment lines-   /*    */ OR //
 
-@. arithmetic operators
-   +  -  *  /  %
-   - modulas operator % is only use with int datatype
-   - if in modulas operator -5%2 the answer will consider the sign of the first digit negetive, if it is 5%-2 the ans will be positive
-   - if in modulas operator -5%-2 the answer will be in negetive
-   - in in / operator -5/-3 result will be positive sign, and if one of the sign will be negetive the result will be negetive
-   - i can use arithmetic operators in printf function directly
-     example :
-     printf(" %d", -x); -positve number will be negetive
-     printf(" %d", x+2); -i can add 2 in to the result
+@. - arithmetic operators
+      +  -  *  /  %
+     - modulas operator % is only use with int datatype
+     - if in modulas operator -5%2 the answer will consider the sign of the first digit negetive, if it is 5%-2 the ans will be positive
+     - if in modulas operator -5%-2 the answer will be in negetive
+     - in in / operator -5/-3 result will be positive sign, and if one of the sign will be negetive the result will be negetive
+     - i can use arithmetic operators in printf function directly
+       example :
+       printf(" %d", -x); -positve number will be negetive
+       printf(" %d", x+2); -i can add 2 in to the result
 
-   relational operators
-   ==   <=   >=   >   <   !=
-   - <= , <  first priority
-   - >= , >  second priority
-   - != , == third priority
-   - if same level of priority accours it will be executed from left to right
+   - relational operators
+      ==   <=   >=   >   <   !=
+       <= , <  first priority
+       >= , >  second priority
+       != , == third priority
+         - if same level of priority accours it will be executed from left to right
 
-   logical operators
-   && [and]   || [or]   ! [reverse - if the answer is true it will show you false]
+   - logical operators
+      && [and]   || [or]   ! [reverse - if the answer is true it will show you false]
 
-   assignment operators
-   =   +=   -=   *=   /=
+   - assignment operators
+      =   +=   -=   *=   /=
 
-   bitwise operators
-   operated bit by bit
-   0 -> 0 0
-   1 -> 0 1
-   2 -> 1 0
-   3 -> 1 1
+   - bitwise operators
+     - operated bit by bit
+         0 -> 0 0
+         1 -> 0 1
+         2 -> 1 0
+         3 -> 1 1
 
 @. - in any case in c program 0 suggest false
    - in any case in c program 1 suggest true
 
 @. - strcmp(x, "this") - to compare strings
-   - if i want to compare charater use '  ' insted of "  "   
+     - if i want to compare charater use '  ' insted of "  "   
 
-@. #define x 1
-   - means it x value will be 1 in all the program
-   - it is written below library functions before main() function
-   - it can directly use in to the program but you can't diretly print it using printf function
-   - it has some different uses also,
-    #define N 5
-    int main()
-    {
-      int value[N];
-      int n;
-      for(n=0 ; n<N ; ++n)
-      {
-         printf(" %d", n+1)
-      }
-    }
+@. - #define x 1
+     - means it x value will be 1 in all the program
+     - it is written below library functions before main() function
+     - it can directly use in to the program but you can't diretly print it using printf function
+     - it has some different uses also,
+       #define N 5
+       int main()
+       {
+         int value[N];
+         int n;
+         for(n=0 ; n<N ; ++n)
+         {
+            printf(" %d", n+1)
+         }
+       }   
 
 @. - x = atoi(a) function which convert string in to numbers
 
@@ -118,168 +118,177 @@ Those are the basic c programming project Notes :
    - ++c means first it will increase the value first by adding 1
    - we can print c++ value by using printf function after exiting the loop
 
-@. if - else condition
-   - do not use ; after any "if-else" and "else if" and "else"statement 
-   - it is not mendetary to type "else" condition after "if", only if will work fine in some cases
-   - "else" is not require condition after type, it is like the end of the statement
-   - if i need to add more condition after if statement use "else if"
+@. - if - else condition
+     - do not use ; after any "if-else" and "else if" and "else"statement 
+     - it is not mendetary to type "else" condition after "if", only if will work fine in some cases
+     - "else" is not require condition after type, it is like the end of the statement
+     - if i need to add more condition after if statement use "else if"
 
-   if (condition)
-   {
-     logic
-   }
-   else if (condition)
-   {
-     logic
-   }
-   else
-   {
-     logic
-   }
-   - you can also use if with only one veriable
-     Example :
-     if(x)
-     {
-      printf(" 10 ");
-     }
-   - this will print 10 unless the x=0, because if x=0 it will consider as false
+       if (condition)
+        {
+         logic
+        }
+       else if (condition)
+        {
+         logic
+        }
+       else
+        {
+         logic
+        }
 
-@. while loop
-   - run until the condition is setisfied
+     - you can also use if with only one veriable
+       Example :
+       if(x)
+       {
+        printf(" 10 ");
+       }
+     - this will print 10 unless the x=0, because if x=0 it will consider as false condition
 
-   while (condition)
-   {
-     logic
-   }
+@. - while loop
+     - run until the condition is setisfied
+
+       while (condition)
+       {
+         logic
+       }
 
    - infinity while loop
-   while (1)
-   {
-     logic
-   }
+       while (1)
+       {
+         logic
+       }
 
-@. type casting
-   float a = 2.4;
-   printf( " %d" (int) a );
-   - you can convert anything in numerical data types
-   - use %d, %f, %lf according the datatype you want to convert
-   - if you convert float into int datatype the round off will be result only in first number only like 9.9 will be 9, 9.2 will be 9
+@. - type casting
+   - float a = 2.4;
+       printf( " %d" (int) a );
+       - you can convert anything in numerical data types
+       - use %d, %f, %lf according the datatype which is written in ( )
+       - if you convert float into int datatype the round off will be result only in first number only like 9.9 will be 9, 9.2 will be 9
 
-@. in while(1) loop, we type retun(0); at the end of the program will result in eliminated the concept of while infinite loop.
-   - return(0); OR return 0; it indicate the termination of the program without any error.
-   - return(p); it return the p value to the main function.
-     example -
-     int func1 (int a, int b)
+@. - return 0;
+     - in old versions of c this is mandatory to use return 0; at the end of the programme, but in morden compilars it add return 0; automatically if you dont write it
+     - in while(1) loop, if i type retun(0); at the end of the program will result in eliminated the concept of while infinite loop.
+     - return(0); OR return 0; it indicate the termination of the program without any error.
+     - it is used with the main function only
+     - return(p); it return the p value to the main function.
+       example -
+       int func1 (int a, int b)
+       {
+        int p;
+        p = a + b;
+        return(p);
+       }
+     - return; it indicates the no retun value and it is used in void main() function.
+
+   - exit(0);
+     - write this will result in to termination of the programme immidiatly, after exit(0); is read by the compilar the further code will not execute
+     - i can't type exit function like this exit( ); always use exit(0);
+     - exit(0); it indicates the safe termination of the program, it is use only when breaking out of the system is necessary
+     - exit(1); it indicates the error in termination of the programme
+     - it can use anywhere in the programme
+
+@. - user defind function / recursion function
+     - when the function call itself
+     - it is deviding the program in to sub program
+     - when the program is solved recursively it is also solved with iteratively 
+       int func1 (int a, int b);
+       int main()
+       {
+         func1 (x, y);
+       }
+       // defining the function
+       int func1 (int a, int b)
+       {
+         logic
+         return (a);
+       }
+     - i can use arithmetic function directly during execution the sub program in to main program 
+
+@. - swith function
+     switch (a)
      {
-      int p;
-      p = a + b;
-      return(p);
+       case a:
+            (logic)
+            break;
+       case b:
+            (logic)
+            break;
+       case c:
+            (logic)
+            break;
+       default:
+            (logic)
+            break;
      }
-   - return; it indicates the no retun value and it is used in void main() function.
-   - exit(); it indicate the termination due to error
-   - exit(0); it indicates the safe termination of the program, it is use only when breaking out of the system is nessesary
+     - it is used with only intigier and character datatype, can't use with float or anyother datatype
+     - you can't perform any arithmetic, relational, logical and assignemnt opertors in to " case a: " statement
+     - if break; is not used it will run through each line includeing default.
+     - if none of the match happen it will execute the default statement
 
-@. user defind function / recursion function
-   - when the function call itself
-   - it is deviding the program in to sub program
-   - when the program is solved recursively it is also solved with iteratively 
-   int func1 (int a, int b);
-   int main()
-   {
-     func1 (x, y);
-   }
-   // defining the function
-   int func1 (int a, int b)
-   {
-     logic
-     return (a);
-   }
-   - i can use math function directly during execution the sub program in to main program 
+@. - break;
+     - it can use with any loop to exit from the loop
 
-@. swith function
-   switch (a)
-   {
-     case a:
-            (logic)
-            break;
-     case b:
-            (logic)
-            break;
-     case c:
-            (logic)
-            break;
-     default:
-            (logic)
-            break;
-   }
-   - it is used with only intigier and character datatype, can't use with float or anyother datatype
-   - you can't perform any arithmetic, relational, logical and assignemnt opertors in to " case a: " statement
-   - if break; is not used it will run through each line includeing default.
-   - if none of the match happen it will execute the default statement
+@. - continue;
+     - with using this it will skip the next part of the code and execute the code after that
 
-@. break;
-   - it can use with any loop to exit from the loop
+@. - goto statement
+     step1 :
+     {
+       code:
+       goto step1 ;
+     }
+     - it is is used when i want to break multiple loop with the single statement
 
-@. continue;
-   - with using this it will skip the next part of the code and execute the code after that
+@. - for loop
+     for ( define ; condition ; increase or decrease )
+     - it can run with single element also. but the blank ; is mendetary to write in for loop
+     - can able to perform arithmetic operations in 3 of the elements
 
-@. goto statement
-   step1 :
-   {
-     code:
-     goto step1 ;
-   }
-   - it is is used when i want to breck multiple loop with the single statement
-
-@. for loop
-   for ( define ; condition ; increase or decrease )
-   - it can run with single element also. but the blank ; is mendetary in for loop
-   - can able to perform arithmetic operators in 3 of the elements
-
-@. do not use veriable in an expression before it has been assign value because sometimes it requires initial value to execute the stuff
-   Example -
-    x = x + y; in this term x requires initialization x = 0
-    count++ ; in this term count veriable also requires intialization count = 0
+@. - do not use veriable in an expression before it has been assign value because sometimes it requires initial value to execute the stuff
+     Example -
+     x = x + y; in this term x requires initialization x = 0
+     count++ ; in this term count veriable also requires intialization count = 0
 
 @. - global veriables - which are defind before main function, it can't be change
    - local veriables - which are defind into the main function, it can be change
 
-@. do while loop
-   do
-   {
-     (execution)
-   }
-   while (condition)
-   -use it when you need to execute the program at lest one time
+@. - do while loop
+     do
+     {
+       (execution)
+     }
+     while (condition)
+     - use it when you need to execute the program at lest one time
 
-@. minus results and incorrect results most probebaly suggest the selected wrong datatype or overflow form the capecity of the datatype
+@. - minus results and incorrect results most probebaly suggest the selected wrong datatype or overflow form the capecity of the datatype
 
 @. - single ' ' is use when i work with single character
    - double " " is use when i work with strings
 
-@. const int vol_1 = 40;
-   if it written before the execution of the main function it value remain constant through the program
+@. - const int vol_1 = 40;
+   - if it written before the execution of the main function it value remain constant through the program
 
-@. voletile int vol_1 = 40;
-   it maybe change due to some external source
+@. - voletile int vol_1 = 40;
+   - it maybe change due to some external source
 
-@. conditional operator / ternary operator
-   x = (a > b) ? a : b;
-   - in above statement if first condition will true it will execute the a, if condition is not setisfied it will execute b
+@. - conditional operator / ternary operator
+     x = (a > b) ? a : b;
+     - in above statement if first condition will true it will execute the a, if condition is not true it will execute b
 
-@. typedef EXISTING_DATATYPE NEW_DATATYPE
-   - it is like rename the datatype i can remane it anything, it can only use at the begning part of the program
+@. - typedef EXISTING_DATATYPE NEW_DATATYPE
+     - it is like rename the datatype i can remane it anything, it can only use at the begning part of the program before main function
 
-@. char answer;
-   answer = getchar();
-   - it will read the charaters from the user until enter key pressed
-   - you can't print using pritf function
-   - do not provide any space after entring the input in getchar because it will result in error 
+@. - char answer;
+     answer = getchar();
+     - it will read the charaters from the user until enter key pressed
+     - you can't print using pritf function
+     - do not provide any space after entring the input in getchar because it will result in error 
 
-   a = 'y';
-   putchar(a);
-   - this is the revrse of getchar()
-   - it is also use as a new line character in the terminal   
+   - a = 'y';
+     putchar(a);
+     - this is the revrse of getchar()
+     - it is also use as a new line character in the terminal   
 
 @. isalpha (c) > 0;
    isdigit (c) > 0;
