@@ -1,5 +1,12 @@
 Those are the basic c programming project Notes :
 
+@. library functions
+   #include <stdio.h>  - main function that include printf and scanf function
+   #include <string.h>  - string function 
+   #include <math.h> - math functions
+   #include <ctype.h> 
+   #include <stdlib.h> - include function to convert string in to numbers
+
 @. int - %d - Intigier datatype
    small int - %d - Small intigier datatype
    long int - %ld - Long intigier datatype ( can hold much larger vlaue then int datatype almost 4 billion numbers )
@@ -22,7 +29,7 @@ Those are the basic c programming project Notes :
 @. printf(" %d \n", a);
    \n  - use for new line
        - if you want to print \n in printf type one slash extra like \\n
-       - if you want to print only \ in printf tupe one slash extra like \\
+       - if you want to print only \ in printf type one slash extra like \\
    \a  - for elert in windows pc
    \t  - horizontal space in line
 
@@ -78,13 +85,6 @@ Those are the basic c programming project Notes :
 
 @. - in any case in c program 0 suggest false
    - in any case in c program 1 suggest true
-
-@. library functions
-   #include <stdio.h>  - main function that include printf and scanf function
-   #include <string.h>  - string function 
-   #include <math.h> - math functions
-   #include <ctype.h> 
-   #include <stdlib.h> - include function to convert string in to numbers
 
 @. strcmp(x, "this") - to compare strings
    - if i want to compare charater use '  ' insted of "  "   
