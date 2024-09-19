@@ -119,10 +119,10 @@ Those are the basic c programming project Notes :
    - we can print c++ value by using printf function after exiting the loop
 
 @. if - else condition
-   - do not use ; after any if  else  else if statement 
-   - it is not mendetary to type else condition after if, only if will work fine
-   - else is not require condition after type, it is like the end of the statement
-   - if i need to add more condition after if statement use else if
+   - do not use ; after any "if-else" and "else if" and "else"statement 
+   - it is not mendetary to type "else" condition after "if", only if will work fine in some cases
+   - "else" is not require condition after type, it is like the end of the statement
+   - if i need to add more condition after if statement use "else if"
 
    if (condition)
    {
