@@ -7,66 +7,70 @@ Those are the basic c programming project Notes :
    #include <ctype.h>   - upper case, lower case, is number, is digit etc.
    #include <stdlib.h>  - include function to convert string in to numbers
 
-@. int - %d - Intigier datatype
-   small int - %d - Small intigier datatype
-   long int - %ld - Long intigier datatype ( can hold much larger vlaue then int datatype almost 4 billion numbers )
-   double int - %ld - Long intigier datatype
-   unsigned int - %u - Unsigned intigier ( store only positive values )
-   float - %f - Float datatype
-   long float - %ld - Long intigier datatype
-   double float - %ld - Float intigier datatype
-   char[5] - %5c - character datatype to store characters only
-   char[5] - %5s - character datatype to store multiple character as well intigiers
+@. int           - %d  - intigier datatype 
+   small int     - %d  - small intigier datatype
+   long int      - %ld - long intigier datatype ( can hold much larger value than int datatype almost 4 billion numbers )
+   double int    - %ld - long intigier datatype
+   unsigned int  - %u  - lnsigned intigier ( store only positive values )
+   float         - %f  - float datatype
+   long float    - %ld - long intigier datatype
+   double float  - %ld - float intigier datatype
+   char[5]       - %5c - character datatype to store characters only
+   char[5]       - %5s - character datatype to store multiple character as well intigiers
 
-@. - All short and long datatype is used for different operating system 32 bits and 64 bits 16 bits
-   - Different compilar uses different space in different syatem
+@. - all short and long datatype is use different storage in different system 32 bits and 64 bits 16 bits
+   - int uses 4 bytes in the memories, short int uses 2 bytes of memories
 
-@. you can also store the negetive values in initegier and float datatype
+@. - you can also store the negetive values in initegier and float datatype
 
-@. printf(" type anything %d", a);
+@. - printf(" type anything %d", a);
    - if %5.2f is written in printf or scanf, means total digits will be 5 and after the points there will be only 2 digits. [example - 123.45 or 12.25 or 1.25] 
    
-@. printf(" %d \n", a);
-   \n  - use for new line
-       - if you want to print \n in printf type one slash extra like \\n
-       - if you want to print only \ in printf type one slash extra like \\
-   \a  - for elert in windows pc
-   \t  - horizontal space in line
+@. - printf(" %d \n", a);
+   - \n  - use for new line
+         - if you want to print \n in printf type one slash extra like \\n
+         - if you want to print only \ in printf type one slash extra like \\
+   - \a  - for alert in windows pc
+   - \t  - work like tab in word horizontally
 
-@. scanf("%d", &a); 
+@. - scanf("%d", &a); 
    - " & " is called address operator
-   scanf(" %d %*d %d", &a, &b);
+
+   - scanf(" %d %*d %d", &a, &b);
    - star value will be skipped
-   scanf("%d-%d-%d",&a, &b, &c);
+
+   - scanf("%d-%d-%d",&a, &b, &c);
    - the use need to input  5-10-15
 
-@. char x[5];
-   scanf(" %5s", x);
-   printf(" %-5s", x);
-   - here the negetive sign is use because 5s represtents the 5 boxes if we type 3 characters it will fill the last 3 box, if we use minus sign it will use the boxes from the 1st.
-   scanf(" %[^\n]", x);
-   - it is represent that it can accept anything as input including space, this is use when we want an address as an input from the user
-   - this is risk using with loop becuase it is taking it to the infinite
-   scanf(" %[a-z], x);
-   - it can accpet input only from the a to z
+@. - char x[5];
+     scanf(" %5s", x);
+     printf(" %-5s", x);
+     - here the negetive sign is use because 5s represtents the 5 boxes if we type 3 characters it will fill the last 3 box, if we use minus sign it will fill the boxes from the 1st.
+   
+   - scanf(" %[^\n]", x);
+     - it is represent that it can accept anything as input including space, this is used when i want an address as an input from the user
+     - this is risk using with loop becuase it is taking it to the infinite
+
+   - scanf(" %[a-z], x);
+     - it can accpet input only from the a to z
 
 @. comment lines-   /*    */ OR //
 
 @. arithmetic operators
    +  -  *  /  %
-   - modulas operator % is only use with int data type
+   - modulas operator % is only use with int datatype
    - if in modulas operator -5%2 the answer will consider the sign of the first digit negetive, if it is 5%-2 the ans will be positive
    - if in modulas operator -5%-2 the answer will be in negetive
    - in in / operator -5/-3 result will be positive sign, and if one of the sign will be negetive the result will be negetive
-   - i can use arithmetic operators in printf function
+   - i can use arithmetic operators in printf function directly
      example :
      printf(" %d", -x); -positve number will be negetive
      printf(" %d", x+2); -i can add 2 in to the result
 
    relational operators
    ==   <=   >=   >   <   !=
-   - <= , < first priority
-   - >= , > secound priority
+   - <= , <  first priority
+   - >= , >  second priority
    - != , == third priority
    - if same level of priority accours it will be executed from left to right
 
@@ -86,7 +90,7 @@ Those are the basic c programming project Notes :
 @. - in any case in c program 0 suggest false
    - in any case in c program 1 suggest true
 
-@. strcmp(x, "this") - to compare strings
+@. - strcmp(x, "this") - to compare strings
    - if i want to compare charater use '  ' insted of "  "   
 
 @. #define x 1
