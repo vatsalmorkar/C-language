@@ -303,9 +303,9 @@ Those are the basic c programming project Notes :
    tolower(a); - convert letter in to lower case
 
 @. - 43.21e-1 it will output in 4.321
-   - printf(" %7.2e", a); - if you want to convert big number in to exponential form
-   - in above example total max digits are 7 for output and 2 digits are after point value
-   - when you use this function compilar will directly convert any float value to singal digit value + exponential form
-     example :
-     12.34, 123.4, 1234.1 will result 1.23e+2 form
+     printf(" %7.2e", a); - if you want to convert big number in to exponential form
+     - in above example total max digits are 7 for output and 2 digits are after point value
+     - when you use this function compilar will directly convert any float value to singal digit value + exponential form
+       example :
+       12.34, 123.4, 1234.1 will result 1.23e+2 form
 
