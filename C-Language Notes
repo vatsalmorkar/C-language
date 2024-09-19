@@ -109,7 +109,7 @@ Those are the basic c programming project Notes :
       }
     }
 
-@. x = atoi(a) function which convert string in to numbers
+@. - x = atoi(a) function which convert string in to numbers
 
 @. - double parentheses will not work in c language as you use it in to excel.
    - for square root of perticular sqrt( x );
