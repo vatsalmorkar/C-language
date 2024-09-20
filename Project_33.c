@@ -1,4 +1,4 @@
-/ factorial calculation program. n! = n * (n-1) * (n-2) until (n-n) happen
+// factorial calculation program. n! = n * (n-1) * (n-2) until (n-n) happen
 
 #include<stdio.h>
 
