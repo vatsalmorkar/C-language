@@ -55,7 +55,7 @@ Those are the basic c programming project Notes :
 
    - scanf(" %[a-z], x);
      - it can accpet input only from the a to z
-     - - i can type words with space, but it can print only the words before applying space 
+     - i can type words with space, but it can print only the words before applying space 
 
 @. - comment lines-   /*    */ OR //
 
