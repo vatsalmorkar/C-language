@@ -46,13 +46,16 @@ Those are the basic c programming project Notes :
      scanf(" %5s", x);
      printf(" %-5s", x);
      - here the negetive sign is use because 5s represtents the 5 boxes if we type 3 characters it will fill the last 3 box, if we use minus sign it will fill the boxes from the 1st.
+     - i can type words with space, but it can print only the words before applying space
    
    - scanf(" %[^\n]", x);
      - it is represent that it can accept anything as input including space, this is used when i want an address as an input from the user
+     - it can print the output with space
      - this is risk using with loop becuase it is taking it to the infinite
 
    - scanf(" %[a-z], x);
      - it can accpet input only from the a to z
+     - - i can type words with space, but it can print only the words before applying space 
 
 @. - comment lines-   /*    */ OR //
 
