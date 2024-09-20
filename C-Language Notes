@@ -36,7 +36,7 @@ Those are the basic c programming project Notes :
 @. - scanf("%d", &a); 
      - " & " is called address operator
 
-     - scanf(" %d %*d %d", &a, &b);
+   - scanf(" %d %*d %d", &a, &b);
      - star value will be skipped
 
    - scanf("%d-%d-%d",&a, &b, &c);
