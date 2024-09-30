@@ -1,4 +1,4 @@
-// Hollow triangle
+// Hollow ractangle
 
 #include<stdio.h>
 
