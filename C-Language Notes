@@ -312,3 +312,49 @@ Those are the basic c programming project Notes :
        example :
        12.34, 123.4, 1234.1 will result 1.23e+2 form
 
+@. - Arreys
+   - it is the collction of the same datatype
+   - if i want to store the 1000 numbers, this is the easiest method you can do this, and finding it easily with the base address
+   - items are located at contiguous memories means one by one in the memorie like boxes, fisrt is called 0 next is 1 etc
+   - if you want to add something in to the arrey after defining you need to delete it moodification is hard in the program
+   - it is sometimes waste of memories
+      - one dimentinal arrey  - like list   - called vector   
+      - two dimentinal arrey  - like metrix - called metrix
+      - three dimential arrey - like cube
+
+      #include<stdio.h>
+      int main()
+      {
+        int marks[100]; //defining
+            marks[0] = 23;
+            marks[1] = 56;
+            marks[2] = 25;
+        printf(" marks %d", marks[1]);
+
+        int marks[100] = {23, 56, 25}; //declaration with intialization
+        printf(" marks %d", marks[1]);
+      }
+      - in both of the cases output will be same
+      
+      #include<stdio.h>
+      int main()
+      {
+        int i;
+        int arry1[3];
+        for (i=0 ; i<=3 ; i++)
+        {
+          printf(" Enter 1D array value :");
+          scanf(" %d", &arry1[i]);
+        }
+        for (i=0 ; i<=3 ; i++)
+        {
+          printf(" %d \n", arry1[i]);
+        }
+      }
+      - when ypu use two for loops you can get output at the end
+
+      
+
+   
+         
+
