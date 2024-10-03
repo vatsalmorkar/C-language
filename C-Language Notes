@@ -381,6 +381,7 @@ Those are the basic c programming project Notes :
         }
       }
       - main function of the array is shorting and serching in that best methods are sequential search & bionary search
+      - during running any function the loop need to satrt from the 0, else it will be error
 
 
       
