@@ -19,7 +19,7 @@ int main()
   {
     if (array1[i]<35)
     {
-      printf(" roll number %d is fail \n", array1[i]);
+      printf(" roll number %d is fail \n", i+1);
     }
   }
 
