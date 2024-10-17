@@ -19,6 +19,8 @@ int main()
 
   for(int i=0 ; i<x ; i++)
   {
+    // i can compare with the first element to get the result
+    // max = min = array1[0]
     if(array1[i]<min)
     {
       min = array1[i];
