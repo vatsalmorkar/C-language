@@ -1,10 +1,11 @@
 // Find the maximum and minimum value from given array
 
 #include<stdio.h>
+#include<limits.h>
 
 int main()
 {
-  int x, value1, max=-9999, min=9999;
+  int x, value1, max=INT_MIN, min=INT_MAX;
   printf(" \n Howmany values you want to enter in to the array \n");
   scanf("%d", &x);
 
