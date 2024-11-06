@@ -206,7 +206,23 @@ Those are the basic c programming project Notes :
          logic
          return (a);
        }
-     - i can use arithmetic function directly during execution the sub program in to main program 
+     - i can use arithmetic function directly during execution the sub program in to main program
+
+     - #include <stdio.h>
+       int func1(int x)
+       {
+        x = 5 + 5;
+        return(x);
+       }
+       int main()
+       {
+         int z = 7;
+         printf(" %d\n", z);
+         func1(z);
+         printf(" %d\n", z);
+         return 0;
+       }
+       - in this case the output will be 7 in both of the cases, which means i can't swipe the numbers with using user define function
 
 @. - swith function
      switch (a)
