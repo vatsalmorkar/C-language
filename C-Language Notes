@@ -224,6 +224,21 @@ Those are the basic c programming project Notes :
        }
        - in this case the output will be 7 in both of the cases, which means i can't swipe the numbers with using user define function
 
+       - #include <stdio.h>
+         int func1(int x[])
+         {   
+           x[1] = 6;
+         }   
+         int main()
+         {
+           int z[3] = {2,3,4};
+           printf(" %d\n", z[1]);
+           func1(z);
+           printf(" %d\n", z[1]);
+           return 0;
+         }
+       - in this case output will be 3 and 6, which means i can swep the number using function in array
+
 @. - swith function
      switch (a)
      {
