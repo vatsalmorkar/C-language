@@ -30,7 +30,6 @@ int main()
   printf(" even sum = %d \n", x);
   printf(" odd sum = %d \n", x2);
   printf(" Difference = %d", x - x2);
-  //  printf("\n Total numbers which are bigger than %d are %d \n", x, count);
 
   return 0;
 }
