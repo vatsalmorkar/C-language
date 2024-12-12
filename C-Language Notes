@@ -118,7 +118,7 @@ Those are the basic c programming project Notes :
    - for square root of perticular sqrt( x );
 
 @. - c++ means it will increse the last value by adding 1
-   - ++c means first it will increase the value first by adding 1
+   - ++c means first it will increase the value by adding 1
    - we can print c++ value by using printf function after exiting the loop
 
 @. - if - else condition
