@@ -39,7 +39,7 @@ Those are the basic c programming project Notes :
    - scanf(" %d %*d %d", &a, &b);
      - star value will be skipped
 
-   - scanf("%d-%d-%d",&a, &b, &c);
+   - scanf("%d-%d-%d", &a, &b, &c);
      - the use need to input  5-10-15
 
 @. - char x[5];
