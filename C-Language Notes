@@ -17,6 +17,7 @@ Those are the basic c programming project Notes :
    double float  - %ld - float intigier datatype
    char[5]       - %5c - character datatype to store characters only
    char[5]       - %5s - character datatype to store multiple character as well intigiers
+   - % values are called formate specifier
 
 @. - all short and long datatype is use different storage in different system 32 bits and 64 bits 16 bits
    - int uses 4 bytes in the memories, short int uses 2 bytes of memories
