@@ -68,6 +68,10 @@ Those are the basic c programming project Notes :
      - if in modulas operator -5%-2 the answer will be in negetive
      - in in / operator -5/-3 result will be positive sign, and if one of the sign will be negetive the result will be negetive
      - i can use arithmetic operators in printf function directly
+     - if i use float and doing arithmetic operation directly even if the answer is in decimals it will print like we use int form
+       example :
+       float x = 5/2 output : 2.000
+
        example :
        printf(" %d", -x); -positve number will be negetive
        printf(" %d", x+2); -i can add 2 in to the result
