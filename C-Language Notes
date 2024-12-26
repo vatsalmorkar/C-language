@@ -30,6 +30,7 @@ Those are the basic c programming project Notes :
      \n  - use for new line
          - if you want to print \n in printf type one slash extra like \\n
          - if you want to print only \ in printf type one slash extra like \\
+         - it is called escape sequence
      \a  - for alert in windows pc
      \t  - work like tab in word horizontally
 
