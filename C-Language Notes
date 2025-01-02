@@ -85,6 +85,16 @@ Those are the basic c programming project Notes :
        example :
        printf(" %d", -x); -positve number will be negetive
        printf(" %d", x+2); -i can add 2 in to the result
+     - in priority of the opration there will be,
+       B O D M A S
+       B: Brackets
+       O: Order, which can refer to square roots or square numbers   
+       D: Division
+       M: Multiplication
+       A: Addition
+       S: Subtraction
+       first priority : * / [ if they are at the same level it will go from left to right ]
+       last priority  : + - [ if they are at the same level it will go from left to right ]
 
    - relational operators
       ==   <=   >=   >   <   !=
