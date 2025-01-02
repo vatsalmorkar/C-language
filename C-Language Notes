@@ -122,6 +122,9 @@ Those are the basic c programming project Notes :
 @. - in any case in c program 0 suggest false
    - in any case in c program 1 suggest true
 
+@. - ACII Values :
+     A = 65  | a = 97
+
 @. - strcmp(x, "this") - to compare strings
      - if i want to compare charater use '  ' insted of "  "   
 
