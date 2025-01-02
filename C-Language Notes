@@ -85,6 +85,9 @@ Those are the basic c programming project Notes :
        example :
        printf(" %d", -x); -positve number will be negetive
        printf(" %d", x+2); -i can add 2 in to the result
+
+     - using / function with float if both of the values are in int form the output will be o autometically, if i want output i need to writedown one of the values in decimal form even 5 means 5.0 will be ok
+
      - in priority of the opration there will be,
        B O D/M A/S
        B: Brackets
