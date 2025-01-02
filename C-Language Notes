@@ -12,7 +12,7 @@ Those are the basic c programming project Notes :
    long int      - %ld - long intigier datatype ( can hold much larger value than int datatype almost 4 billion numbers )
    double int    - %ld - long intigier datatype
    unsigned int  - %u  - lnsigned intigier ( store only positive values )
-   float         - %f  - float datatype
+   float         - %f  - float datatype ( accurate only upto 6 decimals ) 
    long float    - %ld - long intigier datatype
    double float  - %ld - float intigier datatype
    char[5]       - %5c - character datatype to store characters only
