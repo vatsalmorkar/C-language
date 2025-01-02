@@ -66,6 +66,16 @@ Those are the basic c programming project Notes :
      - modulas operator % is only use with int datatype
      - if in modulas operator -5%2 the answer will consider the sign of the first digit negetive, if it is 5%-2 the ans will be positive
      - if in modulas operator -5%-2 the answer will be in negetive
+     - in modulas operator a % b, if a < b than the answer will be directly b alog with whatever the sign it will be.
+       example :
+       #include<stdio.h>
+       int main()
+       {
+          int a = -4;
+          int b = 5;
+          int c = a % b;
+          printf(" %d", c);
+       }
      - in in / operator -5/-3 result will be positive sign, and if one of the sign will be negetive the result will be negetive
      - i can use arithmetic operators in printf function directly
      - if i use float and doing arithmetic operation directly even if the answer is in decimals it will print like we use int form
