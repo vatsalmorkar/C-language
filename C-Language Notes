@@ -161,6 +161,7 @@ Those are the basic c programming project Notes :
      - it is not mendetary to type "else" condition after "if", only if will work fine in some cases
      - "else" is not require condition after type, it is like the end of the statement
      - if i need to add more condition after if statement use "else if"
+     - in else if ladder if one codition is setisfied, the other else if conditions will not check
 
        if (condition)
         {
