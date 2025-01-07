@@ -108,6 +108,9 @@ Those are the basic c programming project Notes :
 
    - logical operators
       && [and]   || [or]   ! [reverse - if the answer is true it will show you false]
+      first priority  - && 
+      second priority - ||
+      third priority  - !
 
    - assignment operators
       =   +=   -=   *=   /=
