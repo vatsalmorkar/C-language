@@ -19,6 +19,13 @@ Those are the basic c programming project Notes :
    char[5]       - %5s - character datatype to store multiple character as well intigiers
    - % values are called formate specifier
 
+@. bollean datatype
+   - when i use relational operators and logical operators insted of using arithmetic operators, than the computer will check it as a codition and result will be in true and false
+   - if it is in true it will return 1 and if it is false it will return 0
+
+@. - in any case in c program 0 suggest false
+   - in any case in c program 1 suggest true
+
 @. - all short and long datatype is use different storage in different system 32 bits and 64 bits 16 bits
    - int uses 4 bytes in the memories, short int uses 2 bytes of memories
 
@@ -122,11 +129,12 @@ Those are the basic c programming project Notes :
          2 -> 1 0
          3 -> 1 1
 
-@. - in any case in c program 0 suggest false
-   - in any case in c program 1 suggest true
-
 @. - ACII Values :
      A = 65  | a = 97
+
+@. - You can compare each datatype with every datatype
+     - if i want to compare int x=5; and float y=5.0; it is called x == y;
+     - if i want to compare char x ='a'; and int y = 97; it is called x == y;
 
 @. - strcmp(x, "this") - to compare strings
      - if i want to compare charater use '  ' insted of "  "   
@@ -317,7 +325,7 @@ Those are the basic c programming project Notes :
 
 @. - do not use veriable in an expression before it has been assign value because sometimes it requires initial value to execute the stuff
      Example -
-     x = x + y; in this term x requires initialization x = 0
+     x = x + y; in this term x requires initialization x = 0, this is called assigning the value
      count++ ; in this term count veriable also requires intialization count = 0
 
 @. - global veriables - which are defind before main function, it can't be change
