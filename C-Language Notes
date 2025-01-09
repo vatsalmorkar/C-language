@@ -323,6 +323,7 @@ Those are the basic c programming project Notes :
      for ( define ; condition ; increase or decrease )
      - it can run with single element also. but the blank ; is mendetary to write in for loop
      - can able to perform arithmetic operations in 3 of the elements
+     - i can defind any condition in the secound term it is not mendetary to write the condition according to define veriables
 
 @. - do not use veriable in an expression before it has been assign value because sometimes it requires initial value to execute the stuff
      Example -
