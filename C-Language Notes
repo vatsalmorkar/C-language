@@ -22,6 +22,17 @@ Those are the basic c programming project Notes :
 @. bollean datatype
    - when i use relational operators and logical operators insted of using arithmetic operators, than the computer will check it as a codition and result will be in true and false
    - if it is in true it will return 1 and if it is false it will return 0
+   - i need to include library function stdbool.h
+     example    
+     #include <stdio.h>
+     #include <stdbool.h>
+     int main()
+     {
+     int a = 1;
+     int b = 2;
+     bool result = (a==b) ;
+     printf(" %d", result);
+     }
 
 @. - in any case in c program 0 suggest false
    - in any case in c program 1 suggest true
