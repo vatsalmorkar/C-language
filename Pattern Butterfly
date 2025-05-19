@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, k;
+    int n = 5;  // Fixed number of rows
+
+    // Upper half
+    for(i = 1; i <= n; i++) {
+        // Left stars
+        for(j = 1; j <= i; j++) {
+            printf("*");
+        }
+
+        // Spaces
+        for(k = 1; k <= 2 * (n - i); k++) {
+            printf(" ");
+        }
+
+        // Right stars
+        for(j = 1; j <= i; j++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    // Lower half
+    for(i = n; i >= 1; i--) {
+        // Left stars
+        for(j = 1; j <= i; j++) {
+            printf("*");
+        }
+
+        // Spaces
+        for(k = 1; k <= 2 * (n - i); k++) {
+            printf(" ");
+        }
+
+        // Right stars
+        for(j = 1; j <= i; j++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
