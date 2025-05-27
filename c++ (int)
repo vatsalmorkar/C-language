@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   
+  
+   
+   int p,r,t;
+   
+   cout<<"Enter   amount=;
+   cin>>p;
+  
+
+   cout<<"Enter Rate=";
+   cin>>r;
+   
+
+   cout<<"Enter time=";
+   cin>>t;
+   
+
+   
