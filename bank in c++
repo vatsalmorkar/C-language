@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() { 
+int holderName;
+int accNo=892334225;
+double openingBalance=10000; double deposit; double withdraw ;
+ cout << "Enter Holder Name: ";
+ cin>>holderName;
+ cout << "Account Number: "<<accNo<<endl;
+ 
+cout << "Opening Balance: "<<openingBalance<<endl;
+
+ cout << "Enter Deposit Amount: ";
+ cin >> deposit; 
+cout << "Enter Withdraw Amount: ";
+ cin >> withdraw;
+ double finalBalance = openingBalance + deposit - withdraw;
+ cout << "\nAccount Summary:\n"; 
+cout << "Holder Name: " << holderName << endl;
+ cout << "Account Number: " << accNo << endl; 
+cout << "Opening Balance: " << openingBalance << endl;
+ cout << "Deposit: " << deposit << endl;
+ cout << "Withdraw: " << withdraw << endl;
+ cout << "Final Balance: " << finalBalance << endl; 
+return 0; }
+
