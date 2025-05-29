@@ -1,0 +1,40 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+class A
+{
+  
+ 
+  
+public:
+int a,b,c;
+void get()
+{
+    
+    cout<<"hello"<<endl;
+    cout<<"enter a:";
+    cin>>a;
+    cout<<"enter b:";
+    cin>>b;
+    
+}
+void sum()
+{
+    c=a+b;
+    
+    
+    cout<<"sum="<<c;
+}
+  
+  
+    
+};
+
+int main() {        
+
+A n1;
+
+n1.get();
+n1.sum();
+    return 0;
+}
