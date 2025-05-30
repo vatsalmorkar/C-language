@@ -1,12 +1,15 @@
+#include <iostream>
  using namespace std;
 int main() { 
-string holderName; string accNo; double openingBalance = 0.0; double deposit = 0.0; double withdraw = 0.0;
+string holderName;
+string accNo="8596475236"; 
+double openingBalance =100000; double deposit = 0.0; double withdraw = 0.0;
  cout << "Enter Holder Name: ";
  getline(cin, holderName);
- cout << "Enter Account Number: ";
- getline(cin, accNo); 
-cout << "Enter Opening Balance: ";
-cin >> openingBalance;
+ cout << "Enter Account Number: "<<accNo<<endl;
+ 
+cout << "Enter Opening Balance: "<<openingBalance<<endl;
+
  cout << "Enter Deposit Amount: ";
  cin >> deposit; 
 cout << "Enter Withdraw Amount: ";
