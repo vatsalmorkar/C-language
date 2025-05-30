@@ -1,11 +1,16 @@
 #include <iostream>
  using namespace std;
-int main() { 
+ class A
+ {
+     public:
+int main();  
 string holderName;
 string accNo="8596475236"; 
 double openingBalance =100000; double deposit = 0.0; double withdraw = 0.0;
+void bank()
+{
  cout << "Enter Holder Name: ";
- getline(cin, holderName);
+ cin>>holderName;
  cout << "Enter Account Number: "<<accNo<<endl;
  
 cout << "Enter Opening Balance: "<<openingBalance<<endl;
@@ -14,6 +19,8 @@ cout << "Enter Opening Balance: "<<openingBalance<<endl;
  cin >> deposit; 
 cout << "Enter Withdraw Amount: ";
  cin >> withdraw;
+}
+void account(){
  double finalBalance = openingBalance + deposit - withdraw;
  cout << "\nAccount Summary:\n"; 
 cout << "Holder Name: " << holderName << endl;
@@ -21,5 +28,13 @@ cout << "Holder Name: " << holderName << endl;
 cout << "Opening Balance: " << openingBalance << endl;
  cout << "Deposit: " << deposit << endl;
  cout << "Withdraw: " << withdraw << endl;
- cout << "Final Balance: " << finalBalance << endl; 
-return 0; }
+ cout << "Final Balance: " << finalBalance << endl;
+}
+};
+int main(){
+    A Harshil;
+    Harshil.bank();
+    Harshil.account();
+}
+
+ 
