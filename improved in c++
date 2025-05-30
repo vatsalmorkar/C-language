@@ -13,10 +13,10 @@ double openingBalance = 100000;
     void bank() {
   cout << "Enter Holder Name: ";
  cin >> holderName;
-    cout << "Enter Account Number: " << accNo << endl;
+    cout <<"Account Number: " << accNo << endl;
 cout << "Enter Opening Balance: " << openingBalance << endl;
 
- cout << "Enter 1 for Deposit: "; 
+ cout << "Enter 1 for Deposit: "<<endl; 
   cout << "Enter 2 for Withdraw: "<<endl;
  cin >> number; 
 
