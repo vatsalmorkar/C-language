@@ -1,87 +1,85 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 class A {
-private:
-    string holderName;
-    string accNo = "8596475236"; 
-    double openingBalance = 100000; 
-    double deposit = 0.0; 
-    double withdraw = 0.0;
+public:
+ string holderName;
+ string accNo = "8596475236"; 
+  double openingBalance = 100000; 
+ double deposit = 0.0; 
+double withdraw = 0.0;
 
 public:
-    void bank() {
-        cout << "Enter Holder Name: ";
-        getline(cin, holderName); // Allow for names with spaces
-        cout << "Account Number: " << accNo << endl;
-        cout << "Opening Balance: " << openingBalance << endl;
+void bank() {
+cout << "Enter Holder Name: "<<endl;
+cin>> holderName; 
+cout << "Account Number: " << accNo << endl;
+cout << "Opening Balance: " << openingBalance << endl;
 
-        int choice;
-        do {
-            cout << "\nEnter 1 for Deposit" << endl; 
-            cout << "Enter 2 for Withdraw" << endl;
-            cout << "Enter 3 to Exit" << endl;
-            cout << "Choose an option: ";
-            cin >> choice; 
+int choice;
+do {
+cout << "\nEnter 1 for Deposit" << endl; 
+cout << "Enter 2 for Withdraw" << endl;
+cout << "Enter 3 to Exit" << endl;
+cout << "Choose an option: ";
+ cin >> choice; 
 
-            switch (choice) {
-                case 1: {
-                    double amount;
-                    cout << "Enter Deposit Amount: ";
-                    cin >> amount;
-                    if (amount < 0) {
-                        cout << "Deposit amount cannot be negative." << endl;
-                    } else {
-                        deposit += amount;
-                        cout << "Amount deposited successfully." << endl;
-                    }
-                    break;
-                }
-                case 2: {
-                    double amount;
-                    cout << "Enter Withdraw Amount: ";
-                    cin >> amount;
-                    double availableBalance = openingBalance + deposit - withdraw;
-                    if (amount < 0) {
-                        cout << "Withdraw amount cannot be negative." << endl;
-                    } else if (amount > availableBalance) {
-                        cout << "Insufficient balance for withdrawal." << endl;
-                    } else {
-                        withdraw += amount;
-                        cout << "Amount withdrawn successfully." << endl;
-                    }
-                    break;
-                }
-                case 3:
-                    cout << "Exiting transaction menu." << endl;
-                    break;
-                default:
-                    cout << "Invalid option selected." << endl;
-                    break;
-            }
-            if(choice == 1 || choice == 2) {
-                account(); // Print summary after each deposit or withdraw
-            }
-        } while (choice != 3);
+switch (choice) {
+case 1: {
+ double amount;
+  cout << "Enter Deposit Amount: ";
+ cin >> amount;
+ if (amount < 0) {
+ cout << "Deposit amount cannot be negative." << endl;
+  } else {
+ deposit += amount;
+ cout << "Amount deposited successfully." << endl;
+ }
+ break;
+}
+case 2: {
+double amount;
+   cout << "Enter Withdraw Amount: ";
+  cin >> amount;
+ double availableBalance = openingBalance + deposit - withdraw;
+ if (amount < 0) {
+cout << "Withdraw amount cannot be negative." << endl;
+ } else if (amount > availableBalance) {
+     cout << "Insufficient balance for withdrawal." << endl;
+    } else {
+  withdraw += amount;
+  cout << "Amount withdrawn successfully." << endl;
+  }
+  break;
     }
+  case 3:
+   cout << "Exit " << endl;
+     break;
+default:
+ cout << "Invalid option selected." << endl;
+   break;
+  }
+ if(choice == 1 || choice == 2) {
+ account(); 
+ }
+ } while (choice != 3);
+   }
 
-    void account() {
-        double finalBalance = openingBalance + deposit - withdraw;
-        cout << "\nAccount Summary:\n"; 
-        cout << "Holder Name: " << holderName << endl;
-        cout << "Account Number: " << accNo << endl; 
-        cout << "Opening Balance: " << openingBalance << endl;
-        cout << "Total Deposited: " << deposit << endl;
-        cout << "Total Withdrawn: " << withdraw << endl;
-        cout << "Final Balance: " << finalBalance << endl;
-    }
+  void account() {
+ double finalBalance = openingBalance + deposit - withdraw;
+ cout << "\nAccount Summary:\n"; 
+cout << "Holder Name: " << holderName << endl;
+cout << "Account Number: " << accNo << endl; 
+cout << "Opening Balance: " << openingBalance << endl;
+cout << "Total Deposited: " << deposit << endl;
+cout << "Total Withdrawn: " << withdraw << endl;
+cout << "Final Balance: " << finalBalance << endl;
+}
 };
 
 int main() {
     A Harshil;
     Harshil.bank();
-    cout << "Thank you for using the ATM system!" << endl;
-    return 0; 
+ return 0; 
 }
 
