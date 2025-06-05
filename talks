@@ -1,2 +1,39 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+class A
+{
+  
+ 
+  
+public:
+int p,r,t;
+void get()
+{
+    
+    
+    cout<<"enter name:"<<endl;
+    cin>>p;
+    cout<<"enter age:"<<endl;
+    cin>>r;
+    cout<<"Enter the gender:"<<endl;
+    cin>>t;
+    
+}
 
-https://www.programiz.com/online-compiler/9hIfMUJFRqVuR
+    
+    
+    
+  
+  
+    
+};
+
+int main() {        
+
+A n1;
+
+n1.get();
+
+    return 0;
+}
