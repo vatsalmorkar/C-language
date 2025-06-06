@@ -60,3 +60,29 @@ int main()
    }
    
 }*/
+EasySkill Career Academy:
+
+Hello Students,
+
+We’re excited to announce the launch of the Beta Version of our Student CRM Panel! 🎉
+You can access it here: https://std.easyskill.live.
+
+In this initial phase, you will be able to:
+✅ View your Leave Records
+✅ Check your Attendance
+✅ Access your Profile Details
+
+You will get your ID and Password from your faculty. Please collect it to log in.
+
+Please note that this is a Beta Version, so it may contain some errors or bugs. If you encounter any issues, don’t feel bad! Instead, help us improve by reporting the errors.
+
+📩 Report errors via:
+👉 WhatsApp or Telegram at 9978087877
+
+Your feedback is invaluable and will help us make the platform better for everyone. Thank you for your patience and support! 🙏
+
+Best regards,
+EasySkill Team
+
+USER ID -20250401350713
+password -!k$S46&8Ji36
