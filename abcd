@@ -1,0 +1,44 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class A 
+{
+public:
+    string firstName; 
+    void get();
+};
+
+class B 
+{
+public:
+    string surname; 
+    void cat();
+};
+
+void A::get()
+{
+    cout << "Enter your First Name: " << endl;
+    cin >> firstName;
+}
+
+void B::cat()
+{
+    cout << "Enter your Surname: " << endl;
+    cin >> surname;
+}
+
+int main()
+{
+    A n1;
+    B n2; 
+    
+    n1.get();
+    n2.cat();
+    
+    
+    cout << "First Name: " << n1.firstName << endl;
+    cout << "Surname: " << n2.surname << endl;
+
+    return 0;
+}
