@@ -1,0 +1,52 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Student {
+private:
+    string name;
+    int roll;
+    float marks[3]; // Assuming 3 subjects
+public:
+    // Function to set student details
+    void setDetails() {
+        cout << "\nEnter student name: ";
+        getline(cin >> ws, name); // ws skips leading whitespaces
+        cout << "Enter roll number: ";
+        cin >> roll;
+        cout << "Enter marks for 3 subjects:\n";
+        for(int i=0; i<3; i++) {
+            cout << "Subject " << i+1 << ": ";
+            cin >> marks[i];
+        }
+    }
+    // Function to display student result
+    void displayResult() {
+        float total = 0.0;
+        for(int i=0; i<3; i++) total += marks[i];
+        float avg = total/3;
+        cout << "\nStudent Name: " << name;
+        cout << "\nRoll Number: " << roll;
+        cout << "\nTotal Marks: " << total;
+        cout << "\nAverage Marks: " << avg << endl;
+    }
+};
+
+int main() {
+    int n;
+    cout << "How many students? ";
+    cin >> n;
+    Student s[n]; // Array of Student objects
+
+    for(int i=0; i<n; i++) {
+        cout << "\nEnter details for student " << i+1 << ":";
+        s[i].setDetails();
+    }
+
+    cout << "\n--- Student Results ---\n";
+    for(int i=0; i<n; i++) {
+        s[i].displayResult();
+    }
+
+    return 0;
+}
