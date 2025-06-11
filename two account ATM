@@ -1,0 +1,135 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class A {
+public:
+    string holderName;
+    string accNo; 
+    double openingBalance; 
+    double deposit = 0.0; 
+    double withdraw = 0.0;
+
+    A() = default; // Default constructor needed for array initialization
+
+    A(string name, string number, double balance) {
+        holderName = name;
+        accNo = number;
+        openingBalance = balance;
+    }
+
+    void showAccountSummary() const {
+        double finalBalance = openingBalance + deposit - withdraw;
+        cout << "\nAccount Summary:\n"; 
+        cout << "Holder Name: " << holderName << endl;
+        cout << "Account Number: " << accNo << endl; 
+        cout << "Opening Balance: " << openingBalance << endl;
+        cout << "Total Deposited: " << deposit << endl;
+        cout << "Total Withdrawn: " << withdraw << endl;
+        cout << "Final Balance: " << finalBalance << endl;
+    }
+
+    void depositAmount(double amount) {
+        if (amount < 0) {
+            cout << "Deposit amount cannot be negative." << endl;
+            return;
+        }
+        deposit += amount;
+        cout << "Amount deposited successfully." << endl;
+    }
+
+    void withdrawAmount(double amount) {
+        double availableBalance = openingBalance + deposit - withdraw;
+        if (amount < 0) {
+            cout << "Withdraw amount cannot be negative." << endl;
+            return;
+        } 
+        if (amount > availableBalance) {
+            cout << "Insufficient balance for withdrawal." << endl;
+            return;
+        }
+        withdraw += amount;
+        cout << "Amount withdrawn successfully." << endl;
+    }
+};
+
+void operateOnAccount(A &account) {
+    cout << "\nOperating on Account of " << account.holderName << " (Account No: " << account.accNo << ")" << endl;
+    cout << "Opening Balance: " << account.openingBalance << endl;
+
+    int choice;
+    do {
+        cout << "\nEnter 1 for Deposit" << endl; 
+        cout << "Enter 2 for Withdraw" << endl;
+        cout << "Enter 3 to Exit to Account Selection" << endl;
+        cout << "Choose an option: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1: {
+                double amount;
+                cout << "Enter Deposit Amount: ";
+                cin >> amount;
+                account.depositAmount(amount);
+                account.showAccountSummary();
+                break;
+            }
+            case 2: {
+                double amount;
+                cout << "Enter Withdraw Amount: ";
+                cin >> amount;
+                account.withdrawAmount(amount);
+                account.showAccountSummary();
+                break;
+            }
+            case 3:
+                cout << "Returning to Account Selection." << endl;
+                break;
+            default:
+                cout << "Invalid option selected." << endl;
+                break;
+        }
+    } while (choice != 3);
+}
+
+int findAccountIndex(A accounts[], int size, const string &input) {
+    for (int i = 0; i < size; i++) {
+        if (accounts[i].accNo == input || accounts[i].holderName == input) {
+            return i;
+        }
+    }
+    return -1; // Not found
+}
+
+int main() {
+    const int numAccounts = 2;
+    A accounts[numAccounts] = {
+        A("Harshil", "666", 100000),
+        A("vatsal", "777", 150000)
+    };
+
+    cout << "Welcome to the Bank System" << endl;
+
+    int mainChoice;
+    do {
+        cout << "\n Enter Account number or name: ";
+        string input;
+        cin >> input;
+        if (input == "exit") {
+            cout << "Exiting the system. Goodbye!" << endl;
+            break;
+        }
+
+        int idx = findAccountIndex(accounts, numAccounts, input);
+        if (idx == -1) {
+            cout << "Account not found. Please try again." << endl;
+            continue;
+        }
+
+        operateOnAccount(accounts[idx]);
+
+    } while (true);
+
+    return 0;
+}
+
