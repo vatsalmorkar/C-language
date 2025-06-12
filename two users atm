@@ -1,0 +1,126 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Account {
+public:
+    string holderName;
+    string accNo;
+    double openingBalance;
+    double deposit = 0.0;
+    double withdraw = 0.0;
+
+    Account() {
+        holderName = "";
+        accNo = "";
+        openingBalance = 0.0;
+    }
+
+    Account(string name, string number, double balance) {
+        holderName = name;
+        accNo = number;
+        openingBalance = balance;
+    }
+
+    void bank() {
+        cout << "Account Number: " << accNo << endl;
+        cout << "Opening Balance: " << openingBalance << endl;
+
+        int choice;
+        do {
+            cout << "\nEnter 1 for Deposit" << endl;
+            cout << "Enter 2 for Withdraw" << endl;
+            cout << "Enter 3 to Exit" << endl;
+            cout << "Choose an option: ";
+            cin >> choice;
+
+            switch (choice) {
+                case 1: {
+                    double amount;
+                    cout << "ડિપોઝિટની રકમ દાખલ કરો: ";
+                    cin >> amount;
+                    if (amount < 0) {
+                        cout << "Deposit amount cannot be negative." << endl;
+                    } else {
+                        deposit += amount;
+                        cout << "રકમ સફળતાપૂર્વક જમા થઈ." << endl;
+                    }
+                    break;
+                }
+                case 2: {
+                    double amount;
+                    cout << "ઉપાડની રકમ દાખલ કરો: ";
+                    cin >> amount;
+                    double availableBalance = openingBalance + deposit - withdraw;
+                    if (amount < 0) {
+                        cout << "Withdraw amount cannot be negative." << endl;
+                    } else if (amount > availableBalance) {
+                        cout << "Insufficient balance for withdrawal." << endl;
+                    } else {
+                        withdraw += amount;
+                        cout << "રકમ સફળતાપૂર્વક ઉપાડી." << endl;
+                    }
+                    break;
+                }
+                case 3:
+                    cout << "Exit" << endl;
+                    break;
+                default:
+                    cout << " option galat hai❌❌❌" << endl;
+                    break;
+            }
+            if (choice == 1 || choice == 2) {
+                accountSummary();
+            }
+        } while (choice != 3);
+    }
+
+    void accountSummary() {
+        double finalBalance = openingBalance + deposit - withdraw;
+        cout << "\nAccount Summary:\n";
+        cout << "Holder Name: " << holderName << endl;
+        cout << "Account Number: " << accNo << endl;
+        cout << "Opening Balance: " << openingBalance << endl;
+        cout << "Total Deposited: " << deposit << endl;
+        cout << "Total Withdrawn: " << withdraw << endl;
+        cout << "Final Balance: " << finalBalance << endl;
+    }
+};
+
+int main() {
+    int no;
+    cout << "વપરાશકર્તાઓની સંખ્યા દાખલ કરો: ";
+    cin >> no;
+
+    if (no <= 0) {
+        cout << "User Number sahi nahi hai❌❌" << endl;
+        return 1;
+    }
+
+   
+ Account* accounts = new Account[no];
+
+
+for (int i = 0; i < no; ++i) {
+string name, number;
+double balance;
+cout << "Enter Holder Name " << (i + 1) << ": ";
+cin >> ws;
+getline(cin, name);
+cout << "Enter Account Number  " << (i + 1) << ": ";
+cin >> number;
+cout << "Enter Opening Balance  " << (i + 1) << ": ";
+cin >> balance;
+
+        accounts[i] = Account(name, number, balance);
+    }
+
+    string selectedAccNo;
+    cout << "Enter the Account Number for atm: ";
+    cin >> selectedAccNo;
+
+
+    delete[] accounts;
+return 0;
+}
+
