@@ -21,3 +21,20 @@ int main()
     
     printf(" %d %d %d", x, y, z); 
 }
+
+#include <stdio.h>
+
+int main() {
+    int start = 9;
+    int lines = 3;
+    int i, j, current;
+
+    for (i = 0; i < lines; i++) {
+        current = start - 2 * i; // Determine starting number for each line
+        for (j = current; j >= 1; j -= 2) {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
