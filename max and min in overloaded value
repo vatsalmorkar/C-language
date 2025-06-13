@@ -1,24 +1,20 @@
 #include <iostream>
+
 using namespace std;
 
-// max for two ints
-int max(int a, int b) {
-    return (a > b) ? a : b;
-}
-
-// max for two doubles
-double max(double a, double b) {
-    return (a > b) ? a : b;
-}
-
-// max for three ints
-int max(int a, int b, int c) {
-    return max(max(a, b), c);
-}
+class A {
+public:
+    void max(int a, int b) {
+        if (a > b) {
+            cout << "Maximum: " << a << endl;
+        } else {
+            cout << "Maximum: " << b << endl;
+        }
+    }
+};
 
 int main() {
-    cout << max(5, 7) << endl;         // Output: 7
-    cout << max(4.2, 2.8) << endl;     // Output: 4.2
-    cout << max(3, 9, 2) << endl;      // Output: 9
+    A obj; 
+    obj.max(500, 100);
     return 0;
 }
