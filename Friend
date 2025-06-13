@@ -1,0 +1,59 @@
+2 #include <iostream>
+
+3 using namespace std;
+
+41
+
+5 class A
+
+6{
+
+friend void get(A n1)
+
+cout<<"Hello";
+
+5
+
+gold
+
+{
+
+10
+
+11
+
+}
+
+12
+
+13);
+
+14
+
+C
+
+15 int main() {
+
+16
+
+17
+
+A ni;
+
+JS
+
+18
+
+19
+
+get(n1);
+
+TS
+
+20
+
+21
+
+return 0;
+
+22}
