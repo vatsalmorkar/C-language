@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class A {
+public:
+    // Overloaded get methods
+
+    void get(int a) {
+        cout << "Single value: " << a << endl;
+    }
+
+    void get(int a, int b) {
+        cout << "Max of (" << a << ", " << b << ") is: " << (a > b ? a : b) << endl;
+        cout << "Min of (" << a << ", " << b << ") is: " << (a < b ? a : b) << endl;
+    }
+
+    void get(int a, int b, int c) {
+        int maxVal = a;
+        int minVal = a;
+        if (b > maxVal) maxVal = b;
+        if (c > maxVal) maxVal = c;
+
+        if (b < minVal) minVal = b;
+        if (c < minVal) minVal = c;
+
+        cout << "Max of (" << a << ", " << b << ", " << c << ") is: " << maxVal << endl;
+        cout << "Min of (" << a << ", " << b << ", " << c << ") is: " << minVal << endl;
+    }
+};
+
+int main() {
+    A obj;
+    obj.get(10);
+    obj.get(10, 20);
+    obj.get(5, 15, 10);
+
+    return 0;
+}
+
