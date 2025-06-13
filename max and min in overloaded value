@@ -1,39 +1,24 @@
 #include <iostream>
 using namespace std;
 
-class A {
-public:
-    // Overloaded get methods
-
-    void get(int a) {
-        cout << "Single value: " << a << endl;
-    }
-
-    void get(int a, int b) {
-        cout << "Max of (" << a << ", " << b << ") is: " << (a > b ? a : b) << endl;
-        cout << "Min of (" << a << ", " << b << ") is: " << (a < b ? a : b) << endl;
-    }
-
-    void get(int a, int b, int c) {
-        int maxVal = a;
-        int minVal = a;
-        if (b > maxVal) maxVal = b;
-        if (c > maxVal) maxVal = c;
-
-        if (b < minVal) minVal = b;
-        if (c < minVal) minVal = c;
-
-        cout << "Max of (" << a << ", " << b << ", " << c << ") is: " << maxVal << endl;
-        cout << "Min of (" << a << ", " << b << ", " << c << ") is: " << minVal << endl;
-    }
-};
-
-int main() {
-    A obj;
-    obj.get(10);
-    obj.get(10, 20);
-    obj.get(5, 15, 10);
-
-    return 0;
+// max for two ints
+int max(int a, int b) {
+    return (a > b) ? a : b;
 }
 
+// max for two doubles
+double max(double a, double b) {
+    return (a > b) ? a : b;
+}
+
+// max for three ints
+int max(int a, int b, int c) {
+    return max(max(a, b), c);
+}
+
+int main() {
+    cout << max(5, 7) << endl;         // Output: 7
+    cout << max(4.2, 2.8) << endl;     // Output: 4.2
+    cout << max(3, 9, 2) << endl;      // Output: 9
+    return 0;
+}
