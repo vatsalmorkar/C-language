@@ -1,0 +1,46 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+class A
+{
+    
+  public:
+  
+  void get()
+  {
+      cout<<"PARENT CLASS";
+  }
+    
+};
+
+class B : public A
+{
+    
+    // public:
+    
+    // void put()
+    // {
+    //     cout<<"SUB CLASS";
+    // }
+    
+    
+};
+class C : public B
+{
+    
+};
+int main() {
+
+
+C n1;
+
+
+n1.get();
+// n1.put();
+
+
+
+
+
+    return 0;
+}
