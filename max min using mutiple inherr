@@ -1,48 +1,40 @@
 #include <iostream>
 using namespace std;
 
-// Base class holding principal and rate of interest
-class A {
-protected:
-    double principal;
-    double rate;
-
+class Min {
 public:
-    void getPrincipalAndRate() {
-        cout << "Enter principal amount: ";
-        cin >> principal;
-        cout << "Enter rate of interest (in %): ";
-        cin >> rate;
+    void min(int a, int b) {
+        if (a < b) {
+            cout << "Minimum: " << a << endl;
+        } else {
+            cout << "Minimum: " << b << endl;
+        }
     }
 };
 
-// Derived class holding time period
-class B : public A {
-protected:
-    double time;
-
+class Max {
 public:
-    void getTime() {
-        cout << "Enter time period (in years): ";
-        cin >> time;
+    void max(int a, int b) {
+        if (a > b) {
+            cout << "Maximum: " << a << endl;
+        } else {
+            cout << "Maximum: " << b << endl;
+        }
     }
 };
 
-// Derived class calculating and displaying simple interest
-class C : public B {
-public:
-    void calculateSimpleInterest() {
-        double simpleInterest = (principal * rate * time) / 100;
-        cout << "Simple Interest = " << simpleInterest << endl;
-    }
+class MinMax : public Min, public Max {
 };
 
 int main() {
-    C obj;
-    obj.getPrincipalAndRate();
-    obj.getTime();
-    obj.calculateSimpleInterest();
+    MinMax obj;
+    int x, y;
+
+    cout << "Enter two numbers: ";
+    cin >> x >> y;
+
+    obj.min(x, y);
+    obj.max(x, y);
 
     return 0;
 }
-
