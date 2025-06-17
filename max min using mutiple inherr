@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+// Base class holding principal and rate of interest
+class A {
+protected:
+    double principal;
+    double rate;
+
+public:
+    void getPrincipalAndRate() {
+        cout << "Enter principal amount: ";
+        cin >> principal;
+        cout << "Enter rate of interest (in %): ";
+        cin >> rate;
+    }
+};
+
+// Derived class holding time period
+class B : public A {
+protected:
+    double time;
+
+public:
+    void getTime() {
+        cout << "Enter time period (in years): ";
+        cin >> time;
+    }
+};
+
+// Derived class calculating and displaying simple interest
+class C : public B {
+public:
+    void calculateSimpleInterest() {
+        double simpleInterest = (principal * rate * time) / 100;
+        cout << "Simple Interest = " << simpleInterest << endl;
+    }
+};
+
+int main() {
+    C obj;
+    obj.getPrincipalAndRate();
+    obj.getTime();
+    obj.calculateSimpleInterest();
+
+    return 0;
+}
+
