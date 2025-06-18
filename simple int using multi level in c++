@@ -1,64 +1,44 @@
 #include <iostream>
 using namespace std;
 
-class Principal {
-protected:
+class A {
+public:
     double principal;
 public:
-    void setPrincipal(double p) {
-        principal = p;
+    void get() {
+        cout << "Enter Principal amount: ";
+        cin >> principal;
     }
 };
 
-class Rate : public Principal {
-protected:
+class Rate : public A {
+public:
     double rate;
 public:
-    void setRate(double r) {
-        rate = r;
+    void hold() {
+        cout << "Enter Rate of Interest (%): ";
+        cin >> rate;
     }
 };
 
 class SimpleInterest : public Rate {
-private:
-    double time;
-    double interest;
+    double time, interest;
 public:
-    void setTime(double t) {
-        time = t;
+    void Time() {
+        cout << "Enter Time : ";
+        cin >> time;
     }
-
-    void calculateInterest() {
-        interest = (principal * rate * time) / 100;
-    }
-
-    void display() {
-        cout << "Principal: " << principal << endl;
-        cout << "Rate of Interest: " << rate << "%" << endl;
-        cout << "Time Period: " << time << " years" << endl;
+    void cat() {
+        interest = (principal * rate * time) / 100.0;
         cout << "Simple Interest: " << interest << endl;
     }
 };
 
 int main() {
-    SimpleInterest si;
-    double p, r, t;
-
-    cout << "Enter Principal amount: ";
-    cin >> p;
-    si.setPrincipal(p);
-
-    cout << "Enter Rate of Interest (in %): ";
-    cin >> r;
-    si.setRate(r);
-
-    cout << "Enter Time period (in years): ";
-    cin >> t;
-    si.setTime(t);
-
-    si.calculateInterest();
-    si.display();
-
+    SimpleInterest n1; 
+    n1.get();          
+    n1.hold();         
+    n1.Time();         
+    n1.cat();          
     return 0;
 }
-
