@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+
+class Principal {
+protected:
+    double principal;
+public:
+    void setPrincipal(double p) {
+        principal = p;
+    }
+};
+
+class Rate : public Principal {
+protected:
+    double rate;
+public:
+    void setRate(double r) {
+        rate = r;
+    }
+};
+
+class SimpleInterest : public Rate {
+private:
+    double time;
+    double interest;
+public:
+    void setTime(double t) {
+        time = t;
+    }
+
+    void calculateInterest() {
+        interest = (principal * rate * time) / 100;
+    }
+
+    void display() {
+        cout << "Principal: " << principal << endl;
+        cout << "Rate of Interest: " << rate << "%" << endl;
+        cout << "Time Period: " << time << " years" << endl;
+        cout << "Simple Interest: " << interest << endl;
+    }
+};
+
+int main() {
+    SimpleInterest si;
+    double p, r, t;
+
+    cout << "Enter Principal amount: ";
+    cin >> p;
+    si.setPrincipal(p);
+
+    cout << "Enter Rate of Interest (in %): ";
+    cin >> r;
+    si.setRate(r);
+
+    cout << "Enter Time period (in years): ";
+    cin >> t;
+    si.setTime(t);
+
+    si.calculateInterest();
+    si.display();
+
+    return 0;
+}
+
