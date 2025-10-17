@@ -1,0 +1,171 @@
+Aim: Create a table named Book with following fields (ISBN, TITLE, AUTHOR, PUBLISHER, YEAR_OF_PUBLICATION, PRICE, TYPE_OF_BOOK) Select appropriate data types for each of the field. Identify ISBN as PRIMARY KEY.
+ 
+Code:
+create table Book(
+ISBN int(10) primary key,
+TITLE char(10),
+AUTHOR char(10),
+PUBLISHER char(10),
+YEAR_OF_PUBLISHER YEAR,
+PRICE int(5),
+TYPE_OF_BOOK char(10)
+);
+INSERT INTO Book VALUES
+(101, 'Inferno', 'Dan Brown', 'Doubleday', 2013, 500, 'Thriller'),
+(102, '1984', 'Orwell', 'Secker', 1949, 300, 'Dystopia'),
+(103, 'It', 'Stephen K', 'Viking', 1986, 450, 'Horror'),
+(104, 'Sapiens', 'Harari', 'Harvill', 2011, 600, 'History'),
+(105, 'Dune', 'Herbert', 'Chilton', 1965, 550, 'Sci-Fi');
+
+
+Aim: Create Database Banking Management System. (i).Create a table ACCOUNT with column account number, name, city, balance, loan taken. (ii).Create a LOAN table with column Loan_Number, Account_Number, Loan_Amount, Interest_Rate, Loan_Date, Remaining_Loan. (iii).Create table TRANSACTION with column account number, transaction date, amount, type of transaction, mode of payment. - Insert at least five records in ALL tables 
+ 
+Code:
+CREATE TABLE ACCOUNT_3(
+ACCOUNT_NUMBER int primary key,
+NAME varchar(20),
+CITY varchar(20),
+BALANCE number(10),
+LOAN_TAKEN number(10));
+DESC ACCOUNT_3
+ 
+Data:
+insert into ACCOUNT_3 values('101','sumit','surat','10000','20000');
+insert into ACCOUNT_3 values('102','sahil','valsad','20000','30000');
+insert into ACCOUNT_3 values('103','jash','puna','30000','40000');
+insert into ACCOUNT_3 values('104','dev','kanpur','40000','50000');
+insert into ACCOUNT_3 values('105','om','patna','50000','60000');
+select * from ACCOUNT_3;
+
+
+Aim:  i) Show all data of table ACCOUNT using Select Query. ii) Display list of those customers whose taken loan date is 1/7/2020. iii) Update the city „Ahmedabad‟ to „Surat‟ in Table ACCOUNT. iv) DELETE the records whose Loan_Number is L003.
+
+select * from ACCOUNT_3;
+select * from LOAN_6 WHERE LOAN_DATE='02-OCT-2008';
+UPDATE ACCOUNT_3 SET CITY='ahemdabad' WHERE CITY='surat';
+select * from ACCOUNT_3;
+DELETE FROM LOAN_6 WHERE LOAN_NUMBER=1004;
+select * from LOAN_6;
+
+
+
+Aim: Rename column „TITLE‟ to „Name_of_Book‟ in table Book. ii) Rename table „BOOK‟ to „Library‟. Add Column „NO_OF_PAGES‟ in Table „Library‟. iii) Drop column TYPE_OF_BOOK. Drop table Library.
+ 
+Code:
+ALTER TABLE Book
+RENAME COLUMN TITLE TO Name_of_Book;
+SELECT*FROM Book;
+
+ALTER TABLE Book
+RENAME TO LIBRARY
+SELECT*FROM LIBRARY;
+
+ALTER TABLE LIBRARY ADD NO_OF_PAGES INT;
+SELECT*FROM LIBRARY;
+
+ALTER TABLE LIBRARY DROP COLUMN TYPE_OF_BOOK;
+SELECT*FROM LIBRARY;
+
+
+
+
+Aim: i) Retrieve specified information for the account holder who are not in „Vadodara‟. ii) Retrieve those records of Account holder whose balance between is 50000 and 100000. iii) Display only those records whose amount is 5000, 25000.
+i) Retrieve specified information for the account holder who are not in „Vadodara‟.
+Syntax:
+SELECT * FROM ACCOUNT_3 WHERE CITY < > 'puna';
+SELECT *FROM ACCOUNT_3 WHERE BALANCE BETWEEN  30000 AND 50000;  
+SELECT * FROM ACCOUNT WHERE LOAN_TAKEN IN (20000, 30000);
+
+
+
+
+
+Aim: i) Display name of all customers whose remaining loan amount is greater than 50000. ii) Display name and city of all customers whose remaining loan amount is equal to 150000. iii) For each loan holder Add 100000 Rs. Amount into the column Loan_Amount.
+ 
+i) Display name of all customers whose remaining loan amount is greater than 50000.
+ 
+Syntax:
+SELECT*FROM LOAN_6 WHERE LOAN_AMOUNT > 25000;
+SELECT * FROM LOAN_6 WHERE LOAN_AMOUNT = 40000;
+UPDATE LOAN_6 SET LOAN_AMOUNT = LOAN_AMOUNT + 10000;
+SELECT * FROM LOAN_6;
+
+
+
+
+Aim: i) Display all customer account number who have account or taken loan from bank. ii) Display all customer account number who have account and also taken loan from bank.
+ 
+SYNTAX:-
+SELECT ACCOUNT_NUMBER FROM ACCOUNT_3 UNION SELECT
+ACCOUNT_NUMBER FROM LOAN_6;
+
+
+
+
+
+Aim: i) Display the square root of 16. ii) Find out length of string “Bank Management”. iii) Trim „ion‟ from „information‟. iv) Display months between date: ‟23-04-05‟ and ‟23-05-06‟.
+ 
+i) Display the square root of 16.
+SYNTAX:-
+SELECT SQRT(16) AS SQUAR_ROOT FROM DUAL;
+
+SELECT LENGTH('Bank Managment')AS STRING_LENGTH FROM DUAL;
+
+SELECT REPLACE('INFORMATION','ION')AS TRIMMED_STRING
+FROM DUAL;
+
+SELECT * FROM LOAN_6 WHERE LOAN_DATE BETWEEN '03/MAY/04' AND '02/OCT/08';
+
+
+
+
+
+
+
+
+Aim: i) Find the total transaction amount of account holder from transaction table. ii) Display total balance for account in Surat city.
+ 
+i) Find the total transaction amount of account holder from transaction table.
+SYNTAX:-
+SELECT ACCOUNT_NUMBER,SUM(AMOUNT)AS TOTAL_TRANSACTION_AMOUNT FROM TRANSACTION_1 GROUP BY ACCOUNT_NUMBER;
+
+SELECT SUM(BALANCE) AS TOTAL_BALANCE FROM ACCOUNT_3 WHERE CITY = 'SURAT';
+
+
+
+
+
+
+Aim: i) Find minimum amount of transaction. ii) Find maximum amount of transaction. Count only those records whose transaction made in the month of „MAY‟. iii) Find the average value of transaction.
+ 
+i) Find minimum amount of transaction.
+SYNTAX:-
+SELECT MIN(AMOUNT) AS minimum_transaction_amount
+FROM TRANSACTION_1;
+
+SELECT MAX(AMOUNT) AS minimum_transaction_amount
+FROM TRANSACTION_1;
+
+SELECT AVG(AMOUNT) AS minimum_transaction_amount
+FROM TRANSACTION_1;
+
+
+
+
+
+Aim: Display the records of table LOAN by account number wise in descending Order
+SYNTAX:-
+SELECT * FROM LOAN_6 ORDER BY ACCOUNT_NUMBER DESC;
+
+
+
+
+
+Aim: i) Display name of all customer who have selected mode of payment as cash. ii) Display Loan detail whose type of transaction is „D‟. iii) Find All Account which have at least one Name with the interest rate is less than 10.
+i) Display name of all customer who have selected mode of payment as cash.
+Syntax:-
+SELECT ACCOUNT_NUMBER FROM TRANSACTION_1 WHERE TYPE_OF_TRANSACTION='cash';
+
+SELECT * FROM TRANSACTION_1 WHERE TYPE_OF_TRANSACTION LIKE '%u%';
+
+SELECT * FROM LOAN_6 WHERE INTEREST_RATE<30;
